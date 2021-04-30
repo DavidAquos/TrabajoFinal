@@ -1,0 +1,92 @@
+<div class="container">
+  <div class="card" style="padding: 20px">
+    <h5>Productos</h5>
+    <div class="responsive-table table-status-sheet" style="margin: 30px">
+      <table class="bordered centered striped" style="text-indent: 1em;">
+        <thead>
+        <tr>
+          <th>Producto</th>
+          <th style="border-left: 1px solid #6a6a6a;">Precio</th>
+          <th style="border-left: 1px solid #6a6a6a;width: 120px">
+            <img src="../../../assets/images/add.png" alt="" style="cursor: pointer" routerLink="/producto">
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of productos">
+          <td>{{p.nombre}}</td>
+          <td>{{p.precio}} €</td>
+          <td [ngStyle]="{'width': productos.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
+            <div>
+              <img src="../../../assets/images/edit.png" alt="" style="margin-left: -1em; margin-right: 1em; cursor: pointer" routerLink="/producto/{{p._id}}">
+              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(p._id, p.nombre, false)">
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <h5>Cupones</h5>
+    <div class="responsive-table table-status-sheet" style="margin: 30px">
+      <table class="bordered centered striped highlight" style="text-indent: 1em;">
+        <thead>
+        <tr>
+          <th class="">Cupon</th>
+          <th class="">Caducidad</th>
+          <th style="border-left: 1px solid #6a6a6a;width: 120px">
+            <img src="../../../assets/images/add.png" alt="" style="cursor: pointer" routerLink="/cupon">
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let c of cupones">
+          <td>{{c.nombre}}</td>
+          <td>{{c.caducidad}}</td>
+          <td [ngStyle]="{'width': cupones.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
+            <div>
+              <img src="../../../assets/images/edit.png" style="margin-left: -1em; margin-right: 1em; cursor: pointer" alt="" routerLink="/cupon/{{c._id}}">
+              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(c._id, c.nombre, true)">
+            </div>
+          </td>
+        </tbody>
+      </table>
+    </div>
+    <h5>Imagen del mapa</h5>
+    <div class="file-field input-field" style="margin-top: 15px">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" accept="image/*" (change)="onSelectFile($event)">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" accept="image/*" type="text">
+      </div>
+    </div>
+    <div class="center-align">
+      <img [src]="img"
+           style="max-width: 50%; align-self: center">
+    </div>
+    <div class="right-align" style="border: 20px">
+      <div class="btn" style=" font-size: 1.1em" (click)="guardarCambios()">
+        <span>Guardar cambios</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>{{alertHead}}</h4>
+      <p>{{alertbody}}</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat" (click)="delete()">Eliminar</a>
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Guardando mapa</h4>
+      <progress id="img-upload-bar" value="0" max="100" style="width: 100%; margin: 10px 0;"></progress>
+    </div>
+  </div>
+</div>

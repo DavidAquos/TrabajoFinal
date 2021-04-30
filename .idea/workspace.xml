@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="actu" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/TrabajoFinal" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="ProjectId" id="1qT7hfjnZYuNJLU6M4RHbPxq71K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\src\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\src\assets\images" />
+      <recent name="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\src\assets\images" />
+      <recent name="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\src\assets\icon" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="" />
+      <created>1617091847440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617091847440</updated>
+      <workItem from="1617091848652" duration="2425000" />
+      <workItem from="1617693382565" duration="7306000" />
+      <workItem from="1617780130141" duration="10726000" />
+      <workItem from="1618300586357" duration="8290000" />
+      <workItem from="1618472231552" duration="2870000" />
+      <workItem from="1618557316386" duration="15000" />
+      <workItem from="1618562041460" duration="4982000" />
+      <workItem from="1618816887363" duration="11742000" />
+      <workItem from="1618919631908" duration="3045000" />
+      <workItem from="1619003461463" duration="12675000" />
+      <workItem from="1619036752783" duration="491000" />
+      <workItem from="1619076041924" duration="135000" />
+      <workItem from="1619083681740" duration="592000" />
+      <workItem from="1619386957763" duration="8853000" />
+      <workItem from="1619430608757" duration="3800000" />
+      <workItem from="1619508212361" duration="56000" />
+      <workItem from="1619608653109" duration="11044000" />
+      <workItem from="1619813752920" duration="8291000" />
+      <workItem from="1619825300750" duration="617000" />
+      <workItem from="1619825943651" duration="105000" />
+      <workItem from="1619826152774" duration="10000" />
+    </task>
+    <task id="LOCAL-00001" summary="Tab hecho pero no va">
+      <created>1617702463845</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617702463845</updated>
+    </task>
+    <task id="LOCAL-00002" summary="actu">
+      <created>1619608679963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619608679963</updated>
+    </task>
+    <task id="LOCAL-00003" summary="actu">
+      <created>1619825374137</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619825374137</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/TrabajoFinal" />
+    </ignored-roots>
+    <MESSAGE value="Tab hecho pero no va" />
+    <MESSAGE value="actu" />
+    <option name="LAST_COMMIT_MESSAGE" value="actu" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619825886413">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619825886413" />
+    <state x="704" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618300618950">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="704" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1618300618950" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619825775998">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1619388335125" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619825775998" />
+    <state x="833" y="418" key="Github.ShareDialog" timestamp="1619825965643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="833" y="418" key="Github.ShareDialog/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617092942850" />
+    <state x="833" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619825965643" />
+    <state x="750" y="225" key="Github.UntrackedFilesDialog" timestamp="1617092949404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="750" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617092949404" />
+    <state x="769" y="240" key="RollbackChangesDialog" timestamp="1619825764974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="240" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619825764974" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1619826161733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619826161733" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1619825883994">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1618838523879" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619825883994" />
+    <state x="-1724" y="166" width="1407" height="666" maximized="true" key="dock-window-1" timestamp="1618840400998">
+      <screen x="-1920" y="178" width="1920" height="1040" />
+    </state>
+    <state x="-1724" y="166" width="1407" height="666" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1618840400998" />
+    <state x="677" y="291" key="refactoring.ChangeSignatureDialog" timestamp="1619612269944">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="291" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619612269944" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1617780915889">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617780915889" />
+  </component>
+</project>

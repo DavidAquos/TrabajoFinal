@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="card" style="padding: 30px">
+    <form #actForm="ngForm">
+      <div class="input-field input-div">
+        <input id="nombre" type="text" name="nombre" [(ngModel)]="ngModel.nombre">
+        <label id="label1" for="nombre" class="text-input">Nombre cupón</label>
+      </div>
+      <div class="input-field input-div">
+        <textarea type="text" id="descuento" class="materialize-textarea" name="descuento"
+                  [(ngModel)]="ngModel.descuento"></textarea>
+        <label id="label2" for="descuento" class="text-input active">Descuento</label>
+      </div>
+      <div class="input-field input-div active">
+        <input type="text" id="time-fin" class="datepicker" name="fechaFin" readonly #fechaFin
+               (change)="fechaFinv = fechaFin.value">
+        <label id="label3" for="time-fin" class="text-input active">Caducidad</label>
+      </div>
+      <div class="row" style="margin-top: 50px">
+        <div class="col s1"></div>
+        <a class="waves-effect waves-light btn-large col s5 m4" routerLink="/">Cancelar</a>
+        <div class="col s1 m2"></div>
+        <button class="waves-effect waves-light btn-large col s5 m4" type="button" (click)="guardarCupon(actForm)">
+          Guardar
+        </button>
+        <div class="col s1"></div>
+      </div>
+    </form>
+  </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Guardando cupón</h4>
+      <p>{{alertBody}}</p>
+      <progress id="img-upload-bar" value="0" max="100" style="width: 100%; margin: 10px 0;"></progress>
+    </div>
+  </div>
+</div>

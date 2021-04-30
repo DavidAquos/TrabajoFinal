@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" default-href="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style="margin: 15px;" class="ion-text-center">
+    <ion-label style="display: flex; align-items: center; justify-content: center;">
+      Tiempo estimado: 45 minutos
+      <img src="../../../assets/images/clock.png" alt="Clock" style="margin-left: 5px;">
+    </ion-label>
+  </div>
+
+  <ion-item class="margen">
+    <ion-label position="floating">Cupon</ion-label>
+    <ion-input mode="md" type="text" [(ngModel)]="cupon" style="" name="cupon"></ion-input>
+  </ion-item>
+
+</ion-content>
+
+<app-tabs></app-tabs>

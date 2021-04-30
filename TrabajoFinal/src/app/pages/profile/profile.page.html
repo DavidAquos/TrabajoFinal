@@ -1,0 +1,57 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="light">
+        <ion-icon slot="start"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed" >
+
+  <div style="margin: 15px;" class="ion-align-items-center">
+    <h3 style="text-align: center; margin-top: 20px">Perfil</h3>
+    <form #formulario="ngForm" (ngSubmit)="enviarFormularioRegistro(formulario)" style="margin: 10px;">
+      <ion-item mode="md" class="margen">
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input mode="md" type="text" required [(ngModel)]="usuario.nombre" style="" name="nombre"></ion-input>
+      </ion-item>
+      <br>
+      <ion-list>
+        <ion-item  mode="md" class="margen">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input mode="md" type="email" [(ngModel)]="usuario.email" name="email" email="true" required
+                     pattern="^([a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"></ion-input>
+        </ion-item>
+      </ion-list>
+      <br>
+      <ion-item  mode="md" class="margen">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input mode="md" [type]="showPassword ? 'text' : 'password'" [(ngModel)]="usuario.password" name="password" required minlength="5"></ion-input>
+        <ion-icon slot="end" [name]="passwordToggleIcon" (click)="togglePassword()" style="margin-top: 30px"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item  mode="md" class="margen">
+        <ion-label position="floating">Confirmar contraseña</ion-label>
+        <ion-input mode="md" [type]="showPassword2 ? 'text' : 'password'" type="password" [(ngModel)]="usuario.password2" name="password2" required minlength="5"></ion-input>
+        <ion-icon slot="end" [name]="passwordToggleIcon2" (click)="togglePassword2()" style="margin-top: 30px"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item mode="md" class="margen">
+        <ion-label position="floating">Teléfono</ion-label>
+        <ion-input mode="md" type="number" [(ngModel)]="usuario.telefono" name="telefono"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button expand="block" class="margen" type="submit" style="margin-top: 20px" [disabled]="formulario.invalid"
+                  (click)="registro()">Guardar
+      </ion-button>
+    </form>
+  </div>
+</ion-content>
