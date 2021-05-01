@@ -33,6 +33,7 @@ export interface Usuario {
   datos_tarjeta: string;
   nivel: string;
   cupones: string[]; // Array que guarda todos los cupones del usuario
+  cupones_usado: string[]; // Array que guarda todos los cupones usados del usuario
 }
 
 export interface Pedido {

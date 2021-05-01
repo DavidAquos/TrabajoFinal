@@ -16,31 +16,61 @@
   </div>
 
   <div class="content-wrapper" style="padding: 0px 15px;">
-    <div id="button-promotion" style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: var(--ion-color-primary);">Activar código promocional</div>
+    <div id="button-promotion"
+         style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: var(--ion-color-primary);">
+      Activar código promocional
+    </div>
     <div style="color: grey; margin-top: 30px; border-bottom: 1px solid grey;">Resumen del pedido</div>
-    <div id="button-dejar-en-la-puerta" style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: var(--ion-color-primary); margin-top: 20px">Dejar en la puerta</div>
-    <div id="button-sin-contacto" style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: var(--ion-color-primary); margin-top: 20px">Entrega sin contacto</div>
+    <div class="button-method" id="button-dejar-en-la-puerta"
+         style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: var(--ion-color-primary); margin-top: 20px">
+      Dejar en la puerta
+    </div>
+    <div class="button-method button-disabled" id="button-sin-contacto"
+         style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: var(--ion-color-primary); margin-top: 20px">
+      Entrega sin contacto
+    </div>
 
     <div style="color: grey; margin-top: 30px; border-bottom: 1px solid grey;">Factura</div>
 
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
+        <ion-card-subtitle style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+          <div>Servicio</div>
+          <div>10.00€</div>
+        </ion-card-subtitle>
+        <ion-card-subtitle style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+          <div>Gastos de envío</div>
+          <div>10.00€</div>
+        </ion-card-subtitle>
+        <ion-card-subtitle style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+          <div>Precio productos</div>
+          <div>10.00€</div>
+        </ion-card-subtitle>
+        <ion-card-subtitle style="display: flex; justify-content: space-between; margin-bottom: 10px; color: #66ff66;">
+          <div>Cupon</div>
+          <div>-10.00€</div>
+        </ion-card-subtitle>
+        <ion-card-subtitle style="display: flex; justify-content: space-between; font-size: 16px;">
+          <div>Total</div>
+          <div>10.00€</div>
+        </ion-card-subtitle>
       </ion-card-header>
-
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
     </ion-card>
 
+    <ion-list>
+      <ion-item *ngFor="let variable of datos" (click)="alClicar(variable)">
+        <ion-label>{{ variable.nombre }}</ion-label>
+        <ion-checkbox [(ngModel)]="variable.seleccionado" [mode]="variable.modo" ></ion-checkbox>
+      </ion-item>
+    </ion-list>
 
-    <div id="button-pagar" style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: #0ffc03; margin-top: 20px; text-align: center">PAGAR</div>
+    <div (click)="pagar()" id="button-pagar"
+         style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: #0ffc03; margin-top: 20px; text-align: center">
+      PAGAR
+    </div>
 
 
   </div>
 
 </ion-content>
 
-<app-tabs></app-tabs>

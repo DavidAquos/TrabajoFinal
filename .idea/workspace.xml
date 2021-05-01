@@ -10,12 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="carrito empezdo">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Agregado cupones a las clases y subida de documento">
+      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/models/User.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-trabajofinal/models/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/models/usuario.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/models/User.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -43,9 +46,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../07-damc2020" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\node_modules\typescript\lib" />
@@ -90,7 +94,7 @@
       <workItem from="1619825300750" duration="617000" />
       <workItem from="1619825943651" duration="105000" />
       <workItem from="1619826152774" duration="574000" />
-      <workItem from="1619902644307" duration="2935000" />
+      <workItem from="1619902644307" duration="9857000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -120,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619904849513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Agregado cupones a las clases y subida de documento">
+      <created>1619905685935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619905685935</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +150,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/TrabajoFinal" />
@@ -146,7 +158,8 @@
     <MESSAGE value="Tab hecho pero no va" />
     <MESSAGE value="actu" />
     <MESSAGE value="carrito empezdo" />
-    <option name="LAST_COMMIT_MESSAGE" value="carrito empezdo" />
+    <MESSAGE value="Agregado cupones a las clases y subida de documento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregado cupones a las clases y subida de documento" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619825886413">
@@ -161,11 +174,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619905178341" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619825775998">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619906689763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1619388335125" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619825775998" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619906689763" />
     <state x="833" y="418" key="Github.ShareDialog" timestamp="1619826174937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,11 +197,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619826161733" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1619904852078">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1619905688177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1618838523879" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619904852078" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619905688177" />
     <state x="-1724" y="166" width="1407" height="666" maximized="true" key="dock-window-1" timestamp="1618840400998">
       <screen x="-1920" y="178" width="1920" height="1040" />
     </state>

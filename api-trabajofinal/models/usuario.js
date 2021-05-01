@@ -10,7 +10,8 @@ const UsuarioSchema = new Schema({
     direcciones: [String],
     datos_tarjeta: String,
     nivel: String,
-    cupones: [String]
+    cupones: [String],
+    cupon_usado: [String]
 });
 
 module.exports = mongoose.model('Usuario', UsuarioSchema);
