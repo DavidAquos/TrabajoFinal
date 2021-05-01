@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="actu" />
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="actu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/TrabajoFinal" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1qT7hfjnZYuNJLU6M4RHbPxq71K" />
@@ -83,7 +86,8 @@
       <workItem from="1619813752920" duration="8291000" />
       <workItem from="1619825300750" duration="617000" />
       <workItem from="1619825943651" duration="105000" />
-      <workItem from="1619826152774" duration="10000" />
+      <workItem from="1619826152774" duration="574000" />
+      <workItem from="1619902644307" duration="2023000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -147,15 +151,16 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1619388335125" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619825775998" />
-    <state x="833" y="418" key="Github.ShareDialog" timestamp="1619825965643">
+    <state x="833" y="418" key="Github.ShareDialog" timestamp="1619826174937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="833" y="418" key="Github.ShareDialog/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617092942850" />
-    <state x="833" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619825965643" />
-    <state x="750" y="225" key="Github.UntrackedFilesDialog" timestamp="1617092949404">
+    <state x="833" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619826174937" />
+    <state x="750" y="225" key="Github.UntrackedFilesDialog" timestamp="1619826189756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="750" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617092949404" />
+    <state x="750" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619826189756" />
     <state x="769" y="240" key="RollbackChangesDialog" timestamp="1619825764974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
