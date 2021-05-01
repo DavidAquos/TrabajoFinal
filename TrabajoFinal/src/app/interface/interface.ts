@@ -17,9 +17,9 @@ export interface Producto {
 
 export interface Cupon {
   _id: string;
-  nombre: string;
-  descuento: number;
-  caducidad: string;
+  nombre: string; // Codigo del cupon
+  descuento: number; // Descuento en €
+  caducidad: string; // Fecha de caducidad del cupon
 }
 
 export interface Usuario {
@@ -29,9 +29,10 @@ export interface Usuario {
   num_telefono: number;
   correo: string;
   pw: string;
-  direcciones: string[];
+  direcciones: string[]; // Array que guarda las 2 direcciones de la tarjeta
   datos_tarjeta: string;
   nivel: string;
+  cupones: string[]; // Array que guarda todos los cupones del usuario
 }
 
 export interface Pedido {

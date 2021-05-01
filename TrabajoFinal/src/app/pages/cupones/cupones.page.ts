@@ -10,6 +10,7 @@ import {NgForm} from "@angular/forms";
 export class CuponesPage implements OnInit {
 
   ngModel: String;
+  cupon: any;
   constructor(public toastController: ToastController) { }
 
   ngOnInit() {
