@@ -11,11 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="cambiado modelo user">
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/twitter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/unnamed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practicas/app-festival" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -95,6 +95,7 @@
       <workItem from="1619913117260" duration="206000" />
       <workItem from="1619989901489" duration="2629000" />
       <workItem from="1620025860750" duration="26000" />
+      <workItem from="1620079693154" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
