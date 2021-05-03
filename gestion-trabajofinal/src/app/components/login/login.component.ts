@@ -18,8 +18,8 @@ export class LoginComponent implements OnInit {
 
   login(email: HTMLInputElement, password: HTMLInputElement) {
     const user = new User();
-    user.email = email.value;
-    user.password = password.value;
+    user.correo = email.value;
+    user.pw = password.value;
     M.toast({html: 'Email o contraseña incorrecto', classes: 'rounded'});
   }
 }
