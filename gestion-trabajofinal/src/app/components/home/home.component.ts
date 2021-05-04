@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {EventoService} from "../../services/evento.service";
 import {Producto} from "../../models/Producto";
 import {Cupon} from "../../models/Cupon";
+import {RedSocial} from "../../models/RedSocial";
 
 declare const M: any;
 const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/djlgdcqhg/image/upload';
@@ -16,6 +17,7 @@ let progressbar: any = null;
 export class HomeComponent implements OnInit {
   productos: Producto[] = [];
   cupones: Cupon[] = [];
+  redSocial: RedSocial[] = [];
   img: String | ArrayBuffer = 'assets/img-not-found.png';
   alertBody = '';
   idToEliminate: string;
@@ -33,6 +35,9 @@ export class HomeComponent implements OnInit {
     });
     this.eventoService.getCupones().subscribe(res => {
       this.cupones = res as Cupon[];
+    });
+    this.eventoService.getSociales().subscribe(res => {
+      this.redSocial = res as RedSocial[];
     });
   }
 

@@ -11,6 +11,9 @@ router.delete('/producto/:id',  async (req, res) => {await adminAppCtrl.deletePr
 router.post('/cupon',  async (req, res) => {await adminAppCtrl.createCupon(req, res);});
 router.put('/cupon/:id',  async (req, res) => {await adminAppCtrl.editProducto(req, res);});
 router.delete('/cupon/:id',  async (req, res) => {await adminAppCtrl.deleteCupon(req, res);});
+router.post('/social',  async (req, res) => {await adminAppCtrl.createSocial(req, res);});
+router.delete('/social/:id',  async (req, res) => {await adminAppCtrl.deleteSocial(req, res);});
+router.put('/social/:id',  async (req, res) => {await adminAppCtrl.editSocial(req, res);});
 // router.get('/private', async (req, res) => {res.status(200).json({ message: "Okey... Hi!" })});
 
 module.exports = router;

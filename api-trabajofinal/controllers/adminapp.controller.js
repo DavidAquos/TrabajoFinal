@@ -1,8 +1,6 @@
 const Producto = require('../models/producto');
 const Cupon = require('../models/cupon');
-const Pedido = require('../models/pedido');
-const Promocion = require('../models/promocion');
-const Usuario = require('../models/usuario');
+const Social = require('../models/redSocial');
 
 const adminappCtrl = {};
 
@@ -79,6 +77,43 @@ adminappCtrl.deleteCupon = async (req, res) => {
     try{
         await Cupon.findByIdAndDelete(req.params.id);
         res.status(200).json({message: 'Cupon deleted'});
+    }catch (e) {
+        res.status(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.createSocial = async (req, res) => {
+    try{
+        const social = new Social({
+            nombre: req.body.nombre,
+            img: req.body.img,
+            url: req.body.url,
+        });
+        await social.save();
+        res.status(201).json({message: 'Social creado'})
+    }catch (e) {
+        res.send(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.editSocial = async (req, res) => {
+    try{
+        const social = {
+            nombre: req.body.nombre,
+            img: req.body.img,
+            url: req.body.url,
+        };
+        await Social.findByIdAndUpdate(req.params.id,{$set: social}, {new:true, useFindAndModify:false});
+        res.status(201).json({message: 'Social updated'});
+    }catch (e) {
+        res.status(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.deleteSocial = async (req, res) => {
+    try{
+        await Social.findByIdAndDelete(req.params.id);
+        res.status(200).json({message: 'Social deleted'});
     }catch (e) {
         res.status(400).json({message: e.message});
     }

@@ -51,6 +51,31 @@
         </tbody>
       </table>
     </div>
+    <h5>Redes sociales</h5>
+    <div class="responsive-table table-status-sheet" style="margin: 30px">
+      <table class="bordered centered striped highlight" style="text-indent: 1em;">
+        <thead>
+        <tr>
+          <th class="">Nombre</th>
+          <th class="">URL</th>
+          <th style="border-left: 1px solid #6a6a6a;width: 120px">
+            <img src="../../../assets/images/add.png" alt="" style="cursor: pointer" routerLink="/social">
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let r of redSocial">
+          <td>{{r.nombre}}</td>
+          <td>{{r.url}}</td>
+          <td [ngStyle]="{'width': cupones.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
+            <div>
+              <img src="../../../assets/images/edit.png" style="margin-left: -1em; margin-right: 1em; cursor: pointer" alt="" routerLink="/social/{{r._id}}">
+              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(r._id, r.nombre, true)">
+            </div>
+          </td>
+        </tbody>
+      </table>
+    </div>
     <h5>Imagen del mapa</h5>
     <div class="file-field input-field" style="margin-top: 15px">
       <div class="btn">
@@ -87,6 +112,11 @@
     <div class="modal-content">
       <h4>Guardando mapa</h4>
       <progress id="img-upload-bar" value="0" max="100" style="width: 100%; margin: 10px 0;"></progress>
+    </div>
+  </div>
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Guardando mapa</h4>
     </div>
   </div>
 </div>

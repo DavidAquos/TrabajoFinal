@@ -10,6 +10,7 @@ import { CabeceraComponent } from './components/cabecera/cabecera.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { CuponComponent } from './components/cupon/cupon.component';
 import { LoginComponent } from './components/login/login.component';
+import { SocialComponent } from './components/social/social.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './components/login/login.component';
     CabeceraComponent,
     ProductoComponent,
     CuponComponent,
-    LoginComponent
+    LoginComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,

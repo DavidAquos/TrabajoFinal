@@ -46,3 +46,10 @@ export interface Pedido {
   total: number; // Suma de todo y resta del descuento
   metodo_pago: string; // Paypal o CC
 }
+
+export interface RedSocial {
+  _id: string;
+  nombre: number;
+  img: string;
+  url: string;
+}

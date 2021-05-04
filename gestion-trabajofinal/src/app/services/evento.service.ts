@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Producto} from "../models/Producto";
 import {Cupon} from "../models/Cupon";
+import {RedSocial} from "../models/RedSocial";
 
 @Injectable({
   providedIn: 'root'
@@ -54,4 +55,23 @@ export class EventoService {
     return this.http.delete( this.URL_API_ADMIN + `/cupon/${_id}` );
   }
 
+  getSociales (){
+    return this.http.get( this.URL_API_EVENT + '/social');
+  }
+
+  deleteSocial (_id: string){
+    return this.http.delete( this.URL_API_ADMIN + `/social/${_id}` );
+  }
+
+  putSocial (id: String, social: RedSocial){
+    return this.http.put(this.URL_API_ADMIN + `/cupon/${id}`, social);
+  }
+
+  getSocial(id: string) {
+    return this.http.get(this.URL_API_EVENT + `/social/${id}`);
+  }
+
+  postSocial(social: RedSocial) {
+    return this.http.post(this.URL_API_ADMIN + '/cupon', social);
+  }
 }

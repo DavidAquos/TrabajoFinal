@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="card" style="padding: 30px">
+    <form #actForm="ngForm">
+      <div class="input-field input-div">
+        <input id="nombre" type="text" name="nombre" [(ngModel)]="ngModel.nombre">
+        <label id="label1" for="nombre" class="text-input">Nombre red social</label>
+      </div>
+      <div class="input-field input-div">
+        <textarea type="text" id="url" class="materialize-textarea" name="url"
+                  [(ngModel)]="ngModel.url"></textarea>
+        <label id="label2" for="url" class="text-input active">URL perfil</label>
+      </div>
+      <div class="input-field input-div">
+        <textarea type="text" id="img" class="materialize-textarea" name="img"
+                  [(ngModel)]="ngModel.img"></textarea>
+        <label id="label3" for="img" class="text-input active">URL imagen</label>
+      </div>
+      <div class="row" style="margin-top: 50px">
+        <div class="col s1"></div>
+        <a class="waves-effect waves-light btn-large col s5 m4" routerLink="/">Cancelar</a>
+        <div class="col s1 m2"></div>
+        <button class="waves-effect waves-light btn-large col s5 m4" type="button" (click)="guardarCupon(actForm)">
+          Guardar
+        </button>
+        <div class="col s1"></div>
+      </div>
+    </form>
+  </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Guardando cupón</h4>
+      <p>{{alertBody}}</p>
+      <progress id="img-upload-bar" value="0" max="100" style="width: 100%; margin: 10px 0;"></progress>
+    </div>
+  </div>
+</div>

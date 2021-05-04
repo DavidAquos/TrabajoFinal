@@ -8,5 +8,7 @@ router.get('/producto', async (req, res) => {eventAppCtrl.getProductos(req,res);
 router.get('/producto/:id', async (req, res) => {eventAppCtrl.getProducto(req,res);});
 router.get('/cupon',  async (req, res) => {eventAppCtrl.getCupones(req,res);});
 router.get('/cupon/:id',  async (req, res) => {eventAppCtrl.getCupon(req,res);});
+router.get('/social/:id',  async (req, res) => {eventAppCtrl.getSocial(req,res);});
+router.get('/social',  async (req, res) => {eventAppCtrl.getSociales(req,res);});
 
 module.exports = router;
