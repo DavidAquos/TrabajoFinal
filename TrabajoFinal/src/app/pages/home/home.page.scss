@@ -1,0 +1,15 @@
+.img-slider img {
+  display: block;
+  height: 240px;
+  width: 240px;
+}
+
+.img-slider {
+  display: -webkit-box;
+  overflow-x: scroll;
+}
+
+.img-slider > div {
+  margin: 0 10px 0 10px;
+  width: 50vw;
+}

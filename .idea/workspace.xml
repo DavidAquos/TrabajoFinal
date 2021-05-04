@@ -10,11 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="cambiado modelo user">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Probando">
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/instagram-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/instagram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/promo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/promo2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/unnamed.gif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +50,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practicas/app-festival" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TrabajoFinal/src/assets/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\src\assets\images" />
+      <recent name="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\src\assets\images" />
+      <recent name="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\src\assets\icon" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\src\assets" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\src\assets\images" />
-      <recent name="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\src\assets\images" />
-      <recent name="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\src\assets\icon" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +99,10 @@
       <workItem from="1619913117260" duration="206000" />
       <workItem from="1619989901489" duration="2629000" />
       <workItem from="1620025860750" duration="26000" />
-      <workItem from="1620079693154" duration="619000" />
+      <workItem from="1620079693154" duration="886000" />
+      <workItem from="1620080871297" duration="120000" />
+      <workItem from="1620080999160" duration="79000" />
+      <workItem from="1620163167921" duration="3017000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -146,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619913279887</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Probando">
+      <created>1620080556044</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620080556044</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,60 +190,7 @@
     <MESSAGE value="Agregado cupones a las clases y subida de documento" />
     <MESSAGE value="Carrito avanzado y cambiado modelo user" />
     <MESSAGE value="cambiado modelo user" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambiado modelo user" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619825886413">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619825886413" />
-    <state x="704" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618300618950">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="704" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1618300618950" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619905178341">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619905178341" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1620025884155">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1619388335125" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1620025884155" />
-    <state x="833" y="418" key="Github.ShareDialog" timestamp="1619826174937">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="833" y="418" key="Github.ShareDialog/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617092942850" />
-    <state x="833" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619826174937" />
-    <state x="750" y="225" key="Github.UntrackedFilesDialog" timestamp="1619826189756">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="750" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617092949404" />
-    <state x="750" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619826189756" />
-    <state x="769" y="240" key="RollbackChangesDialog" timestamp="1619825764974">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="240" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619825764974" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1619826161733">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619826161733" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1619913282329">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1618838523879" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619913282329" />
-    <state x="-1724" y="166" width="1407" height="666" maximized="true" key="dock-window-1" timestamp="1618840400998">
-      <screen x="-1920" y="178" width="1920" height="1040" />
-    </state>
-    <state x="-1724" y="166" width="1407" height="666" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1618840400998" />
-    <state x="677" y="291" key="refactoring.ChangeSignatureDialog" timestamp="1619612269944">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="677" y="291" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619612269944" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1617780915889">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.178.1920.1040@0.0.1920.1040" timestamp="1617780915889" />
+    <MESSAGE value="Probando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Probando" />
   </component>
 </project>
