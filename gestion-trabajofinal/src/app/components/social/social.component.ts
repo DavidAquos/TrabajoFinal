@@ -27,7 +27,7 @@ export class SocialComponent implements OnInit {
     M.AutoInit();
     this.route.paramMap.subscribe(params => {
       if (params.has("id")) {
-        this.eventService.getCupon(params.get("id") || "").subscribe(res => {
+        this.eventService.getSocial(params.get("id") || "").subscribe(res => {
           this.redSocial = res as RedSocial;
           this.inicializarDatos();
         });
@@ -35,7 +35,7 @@ export class SocialComponent implements OnInit {
     });
   }
 
-  guardarCupon(actForm: NgForm) {
+  guardarSocial(actForm: NgForm) {
     if (actForm.value.nombre != '') {
       this.alertBody = 'Guardando Red Social ';
       const elems = document.getElementById('modal3');

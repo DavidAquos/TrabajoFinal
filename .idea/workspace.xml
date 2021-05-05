@@ -10,23 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Home con carrousel">
-      <change afterPath="$PROJECT_DIR$/api-trabajofinal/models/redSocial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/models/RedSocial.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/adminapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/adminapp.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/adminapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/adminapp.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/services/evento.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/services/evento.service.ts" afterDir="false" />
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="redSocial agregada a medias">
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +96,7 @@
       <workItem from="1620079693154" duration="886000" />
       <workItem from="1620080871297" duration="120000" />
       <workItem from="1620080999160" duration="79000" />
-      <workItem from="1620163167921" duration="8306000" />
+      <workItem from="1620163167921" duration="8610000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -175,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620167194246</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="redSocial agregada a medias">
+      <created>1620172749542</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620172749542</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +200,7 @@
     <MESSAGE value="cambiado modelo user" />
     <MESSAGE value="Probando" />
     <MESSAGE value="Home con carrousel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home con carrousel" />
+    <MESSAGE value="redSocial agregada a medias" />
+    <option name="LAST_COMMIT_MESSAGE" value="redSocial agregada a medias" />
   </component>
 </project>

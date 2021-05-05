@@ -12,14 +12,14 @@
       </div>
       <div class="input-field input-div">
         <textarea type="text" id="img" class="materialize-textarea" name="img"
-                  [(ngModel)]="ngModel.img"></textarea>
+                  [(ngModel)]="ngModel.img" style="height: 100px"></textarea>
         <label id="label3" for="img" class="text-input active">URL imagen</label>
       </div>
       <div class="row" style="margin-top: 50px">
         <div class="col s1"></div>
         <a class="waves-effect waves-light btn-large col s5 m4" routerLink="/">Cancelar</a>
         <div class="col s1 m2"></div>
-        <button class="waves-effect waves-light btn-large col s5 m4" type="button" (click)="guardarCupon(actForm)">
+        <button class="waves-effect waves-light btn-large col s5 m4" type="button" (click)="guardarSocial(actForm)">
           Guardar
         </button>
         <div class="col s1"></div>
