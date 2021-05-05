@@ -1,6 +1,7 @@
 const Producto = require('../models/producto');
 const Cupon = require('../models/cupon');
 const Social = require('../models/redSocial');
+const Promocion = require('../models/promocion');
 
 const adminappCtrl = {};
 
@@ -114,6 +115,41 @@ adminappCtrl.deleteSocial = async (req, res) => {
     try{
         await Social.findByIdAndDelete(req.params.id);
         res.status(200).json({message: 'Social deleted'});
+    }catch (e) {
+        res.status(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.createPromocion = async (req, res) => {
+    try{
+        const promocion = new Promocion({
+            nombre: req.body.nombre,
+            img: req.body.img,
+        });
+        await promocion.save();
+        res.status(201).json({message: 'Promocion creada'})
+    }catch (e) {
+        res.send(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.editPromocion = async (req, res) => {
+    try{
+        const promocion = {
+            nombre: req.body.nombre,
+            img: req.body.img,
+        };
+        await Promocion.findByIdAndUpdate(req.params.id,{$set: promocion}, {new:true, useFindAndModify:false});
+        res.status(201).json({message: 'Promocion updated'});
+    }catch (e) {
+        res.status(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.deletePromocion = async (req, res) => {
+    try{
+        await Promocion.findByIdAndDelete(req.params.id);
+        res.status(200).json({message: 'Promocion deleted'});
     }catch (e) {
         res.status(400).json({message: e.message});
     }

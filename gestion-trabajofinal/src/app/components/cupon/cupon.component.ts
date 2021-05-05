@@ -56,13 +56,13 @@ export class CuponComponent implements OnInit {
       this.route.paramMap.subscribe(params => {
         if (params.has("id")) {
           this.eventService.putCupon(params.get("id"), cupon).subscribe(() => {
-            M.toast({html: 'Producto guardado correctamente', classes: 'rounded'});
+            M.toast({html: 'Cupón guardado correctamente', classes: 'rounded'});
             this.router.navigate(['/']);
             instances.close();
           });
         } else {
           this.eventService.postCupon(cupon).subscribe(() => {
-            M.toast({html: 'Producto guardado correctamente', classes: 'rounded'});
+            M.toast({html: 'Cupón guardado correctamente', classes: 'rounded'});
             this.router.navigate(['/']);
             instances.close();
           });

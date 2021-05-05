@@ -10,5 +10,7 @@ router.get('/cupon',  async (req, res) => {eventAppCtrl.getCupones(req,res);});
 router.get('/cupon/:id',  async (req, res) => {eventAppCtrl.getCupon(req,res);});
 router.get('/social/:id',  async (req, res) => {eventAppCtrl.getSocial(req,res);});
 router.get('/social',  async (req, res) => {eventAppCtrl.getSociales(req,res);});
+router.get('/promocion',  async (req, res) => {eventAppCtrl.getPromociones(req,res);});
+router.get('/promocion/:id',  async (req, res) => {eventAppCtrl.getPromocion(req,res);});
 
 module.exports = router;

@@ -64,7 +64,7 @@ export class EventoService {
   }
 
   putSocial (id: String, social: RedSocial){
-    return this.http.put(this.URL_API_ADMIN + `/cupon/${id}`, social);
+    return this.http.put(this.URL_API_ADMIN + `/social/${id}`, social);
   }
 
   getSocial(id: string) {
@@ -72,6 +72,6 @@ export class EventoService {
   }
 
   postSocial(social: RedSocial) {
-    return this.http.post(this.URL_API_ADMIN + '/cupon', social);
+    return this.http.post(this.URL_API_ADMIN + '/social', social);
   }
 }

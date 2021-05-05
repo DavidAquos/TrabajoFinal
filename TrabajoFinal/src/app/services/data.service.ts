@@ -29,4 +29,8 @@ export class DataService {
     return this.http.get(this.URL_API + `/promocion/${_id}`);
   }
 
+  getSocial() {
+    return this.http.get(this.URL_API + /social/);
+  }
+
 }

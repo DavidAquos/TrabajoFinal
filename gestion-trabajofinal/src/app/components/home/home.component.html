@@ -19,7 +19,7 @@
           <td [ngStyle]="{'width': productos.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
             <div>
               <img src="../../../assets/images/edit.png" alt="" style="margin-left: -1em; margin-right: 1em; cursor: pointer" routerLink="/producto/{{p._id}}">
-              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(p._id, p.nombre, false)">
+              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(p._id, p.nombre, 1)">
             </div>
           </td>
         </tr>
@@ -45,7 +45,7 @@
           <td [ngStyle]="{'width': cupones.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
             <div>
               <img src="../../../assets/images/edit.png" style="margin-left: -1em; margin-right: 1em; cursor: pointer" alt="" routerLink="/cupon/{{c._id}}">
-              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(c._id, c.nombre, true)">
+              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(c._id, c.nombre, 2)">
             </div>
           </td>
         </tbody>
@@ -67,10 +67,10 @@
         <tr *ngFor="let r of redSocial">
           <td>{{r.nombre}}</td>
           <td>{{r.url}}</td>
-          <td [ngStyle]="{'width': cupones.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
+          <td [ngStyle]="{'width': redSocial.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
             <div>
               <img src="../../../assets/images/edit.png" style="margin-left: -1em; margin-right: 1em; cursor: pointer" alt="" routerLink="/social/{{r._id}}">
-              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(r._id, r.nombre, true)">
+              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(r._id, r.nombre, 3)">
             </div>
           </td>
         </tbody>

@@ -1,6 +1,7 @@
 const Producto = require('../models/producto');
 const Cupon = require('../models/cupon');
 const Social = require('../models/redSocial');
+const Promocion = require('../models/promocion');
 
 const eventappCtrl = {};
 
@@ -50,7 +51,7 @@ eventappCtrl.getSocial = async (req, res) => {
     try{
         const social = await Social.findById(req.params.id);
         if (social == null){
-            res.status(404).json({message: 'Cupon not found'});
+            res.status(404).json({message: 'Social not found'});
         }
         res.status(201).json(social);
     }catch (e) {
@@ -63,6 +64,25 @@ eventappCtrl.getSociales = async (req, res) => {
         res.status(500).json({message: err.message})
     });
     res.json(social);
+};
+
+eventappCtrl.getPromociones() = async (req, res) => {
+    try{
+        const promocion = await Promocion.findById(req.params.id);
+        if (promocion == null){
+            res.status(404).json({message: 'Promocion not found'});
+        }
+        res.status(201).json(promocion);
+    }catch (e) {
+        res.status(500).json({message: e.message});
+    }
+};
+
+eventappCtrl.getPromocion() = async (req, res) => {
+    const promocion = await Promocion.find().catch((err) => {
+        res.status(500).json({message: err.message})
+    });
+    res.json(promocion);
 };
 
 module.exports = eventappCtrl;

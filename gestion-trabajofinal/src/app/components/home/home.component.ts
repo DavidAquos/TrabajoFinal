@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   img: String | ArrayBuffer = 'assets/img-not-found.png';
   alertBody = '';
   idToEliminate: string;
-  act0tal1 = null;
+  act0tal1 = 0;
   alertHead: string;
   alertbody: string;
 
@@ -41,12 +41,12 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  confirmdelete(_id: string, nombre: string, table: boolean) {
+  confirmdelete(_id: string, nombre: string, table: number) {
     this.idToEliminate = _id;
     this.act0tal1 = table;
     this.alertHead = 'Eliminar "' + nombre + '" ?';
     if (table)
-      this.alertbody = 'Estas seguro de eliminar el cupón "' + nombre + '" de forma permanente?';
+      this.alertbody = 'Estas seguro de eliminar "' + nombre + '" de forma permanente?';
     else
       this.alertbody = 'Estas seguro de eliminar el producto "' + nombre + '" de forma permanente?';
     var elems = document.getElementById('modal1');
@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
   }
 
   delete() {
-    if (!this.act0tal1) {
+    if (this.act0tal1 == 1) {
       this.eventoService.deleteProducto(this.idToEliminate).subscribe(res => {
         const resaux = res as { message: string };
         M.toast({html: resaux.message, classes: 'rounded'});
@@ -73,13 +73,24 @@ export class HomeComponent implements OnInit {
           }
         }
       });
-    } else {
+    } else if (this.act0tal1 == 2) {
       this.eventoService.deleteCupon(this.idToEliminate).subscribe(res => {
         const resaux = res as { message: string };
         M.toast({html: resaux.message, classes: 'rounded'});
         for (let i = 0; i < this.cupones.length; i++) {
           if (this.cupones[i]._id == this.idToEliminate) {
             this.cupones.splice(i, 1);
+          }
+        }
+      });
+    }
+    else {
+      this.eventoService.deleteSocial(this.idToEliminate).subscribe(res => {
+        const resaux = res as { message: string };
+        M.toast({html: resaux.message, classes: 'rounded'});
+        for (let i = 0; i < this.redSocial.length; i++) {
+          if (this.redSocial[i]._id == this.idToEliminate) {
+            this.redSocial.splice(i, 1);
           }
         }
       });

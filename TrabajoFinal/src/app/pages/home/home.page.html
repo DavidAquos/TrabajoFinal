@@ -30,17 +30,8 @@
     <div style="font-size: 19px;padding: 0 15px 15px 15px;"> <ion-label style="color: #e5e8ec;font-weight: 700;">Redes Sociales</ion-label></div>
     <div style="box-shadow: 5px 0 5px 5px rgba(27, 19, 245, .39);">
       <div class="img-slider">
-        <div>
-          <img src="assets/images/twitter.jpg">
-        </div>
-        <div>
-          <img src="assets/images/instagram-logo.jpg">
-        </div>
-        <div>
-          <img src="assets/images/promo1.png">
-        </div>
-        <div>
-          <img src="assets/images/promo2.jpg">
+        <div *ngFor="let r of redSocial">
+          <img [src]="r.img">
         </div>
       </div>
     </div>

@@ -10,10 +10,23 @@
                   [(ngModel)]="ngModel.url"></textarea>
         <label id="label2" for="url" class="text-input active">URL perfil</label>
       </div>
-      <div class="input-field input-div">
-        <textarea type="text" id="img" class="materialize-textarea" name="img"
-                  [(ngModel)]="ngModel.img" style="height: 100px"></textarea>
-        <label id="label3" for="img" class="text-input active">URL imagen</label>
+      <div class="row valign-wrapper">
+        <div class="col s6">
+          <label class="text-input">Imagen de la red social</label>
+          <div class="file-field input-field" style="margin-top: 15px">
+            <div class="btn">
+              <span>File</span>
+              <input type="file" accept="image/*" (change)="onSelectFile($event, 1)" id="img-uploader">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" accept="image/*" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <img [src]="img"
+               style="max-width: 100%">
+        </div>
       </div>
       <div class="row" style="margin-top: 50px">
         <div class="col s1"></div>
@@ -28,7 +41,7 @@
   </div>
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>Guardando cupón</h4>
+      <h4>Guardando Red social</h4>
       <p>{{alertBody}}</p>
       <progress id="img-upload-bar" value="0" max="100" style="width: 100%; margin: 10px 0;"></progress>
     </div>
