@@ -1,7 +1,6 @@
 export interface Promocion {
   _id: string;
   nombre: string;
-  precio: number;
   descripcion: string;
   img: string;
 }

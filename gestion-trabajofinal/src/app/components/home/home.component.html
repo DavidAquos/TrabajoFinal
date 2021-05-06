@@ -31,8 +31,8 @@
       <table class="bordered centered striped highlight" style="text-indent: 1em;">
         <thead>
         <tr>
-          <th class="">Cupon</th>
-          <th class="">Caducidad</th>
+          <th>Cupon</th>
+          <th>Caducidad</th>
           <th style="border-left: 1px solid #6a6a6a;width: 120px">
             <img src="../../../assets/images/add.png" alt="" style="cursor: pointer" routerLink="/cupon">
           </th>
@@ -56,8 +56,8 @@
       <table class="bordered centered striped highlight" style="text-indent: 1em;">
         <thead>
         <tr>
-          <th class="">Nombre</th>
-          <th class="">URL</th>
+          <th>Nombre</th>
+          <th>URL</th>
           <th style="border-left: 1px solid #6a6a6a;width: 120px">
             <img src="../../../assets/images/add.png" alt="" style="cursor: pointer" routerLink="/social">
           </th>
@@ -71,6 +71,29 @@
             <div>
               <img src="../../../assets/images/edit.png" style="margin-left: -1em; margin-right: 1em; cursor: pointer" alt="" routerLink="/social/{{r._id}}">
               <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(r._id, r.nombre, 3)">
+            </div>
+          </td>
+        </tbody>
+      </table>
+    </div>
+    <h5>Promociones</h5>
+    <div class="responsive-table table-status-sheet" style="margin: 30px">
+      <table class="bordered centered striped highlight" style="text-indent: 1em;">
+        <thead>
+        <tr>
+          <th>Nombre</th>
+          <th style="border-left: 1px solid #6a6a6a;width: 120px">
+            <img src="../../../assets/images/add.png" alt="" style="cursor: pointer" routerLink="/promocion">
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of promociones">
+          <td>{{p.nombre}}</td>
+          <td [ngStyle]="{'width': promociones.length>=3 ? 'calc(120px - 0.2em)' : '133px'}">
+            <div>
+              <img src="../../../assets/images/edit.png" style="margin-left: -1em; margin-right: 1em; cursor: pointer" alt="" routerLink="/promocion/{{p._id}}">
+              <img src="../../../assets/images/delete.png" alt="" style="cursor: pointer" (click)="confirmdelete(p._id, p.nombre, 4)">
             </div>
           </td>
         </tbody>

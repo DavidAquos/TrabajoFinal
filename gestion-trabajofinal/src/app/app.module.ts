@@ -11,6 +11,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { CuponComponent } from './components/cupon/cupon.component';
 import { LoginComponent } from './components/login/login.component';
 import { SocialComponent } from './components/social/social.component';
+import { PromocionComponent } from './components/promocion/promocion.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SocialComponent } from './components/social/social.component';
     ProductoComponent,
     CuponComponent,
     LoginComponent,
-    SocialComponent
+    SocialComponent,
+    PromocionComponent
   ],
   imports: [
     BrowserModule,

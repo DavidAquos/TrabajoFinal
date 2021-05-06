@@ -10,28 +10,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="redSocial tirando a medias">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Redes sociales dinamicas 90%&#10;Inicio Promociones dinamicas">
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/promocion/promocion-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/promocion/promocion.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/promocion/promocion.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/promocion/promocion.page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/promocion/promocion.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/promocion/promocion.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/promocion/promocion.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/promocion/promocion.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/models/Promocion.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Diseño Interfaces documento.odt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/productos/productos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/productos/productos.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/productos/productos.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/productos/productos.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/instagram-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/instagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/twitter.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/adminapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/adminapp.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-trabajofinal/models/promocion.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/models/promocion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/adminapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/adminapp.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/cupon/cupon.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/cupon/cupon.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/social/social.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/services/evento.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/services/evento.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/necesario.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -63,7 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../07-damc2020" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practicas" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\node_modules\typescript\lib" />
@@ -117,7 +127,9 @@
       <workItem from="1620080999160" duration="79000" />
       <workItem from="1620163167921" duration="8972000" />
       <workItem from="1620201130409" duration="8000" />
-      <workItem from="1620223828386" duration="7319000" />
+      <workItem from="1620223828386" duration="7447000" />
+      <workItem from="1620237476074" duration="8979000" />
+      <workItem from="1620285317777" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -196,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620173128030</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Redes sociales dinamicas 90%&#10;Inicio Promociones dinamicas">
+      <created>1620237370024</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620237370024</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +249,7 @@
     <MESSAGE value="Home con carrousel" />
     <MESSAGE value="redSocial agregada a medias" />
     <MESSAGE value="redSocial tirando" />
-    <option name="LAST_COMMIT_MESSAGE" value="redSocial tirando" />
+    <MESSAGE value="Redes sociales dinamicas 90%&#10;Inicio Promociones dinamicas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redes sociales dinamicas 90%&#10;Inicio Promociones dinamicas" />
   </component>
 </project>

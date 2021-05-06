@@ -3,6 +3,7 @@ import {EventoService} from "../../services/evento.service";
 import {Producto} from "../../models/Producto";
 import {Cupon} from "../../models/Cupon";
 import {RedSocial} from "../../models/RedSocial";
+import {Promocion} from "../../models/Promocion";
 
 declare const M: any;
 const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/djlgdcqhg/image/upload';
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
   productos: Producto[] = [];
   cupones: Cupon[] = [];
   redSocial: RedSocial[] = [];
+  promociones: Promocion[] = [];
   img: String | ArrayBuffer = 'assets/img-not-found.png';
   alertBody = '';
   idToEliminate: string;
@@ -38,6 +40,9 @@ export class HomeComponent implements OnInit {
     });
     this.eventoService.getSociales().subscribe(res => {
       this.redSocial = res as RedSocial[];
+    });
+    this.eventoService.getPromociones().subscribe(res => {
+      this.promociones = res as Promocion[];
     });
   }
 
@@ -84,8 +89,19 @@ export class HomeComponent implements OnInit {
         }
       });
     }
-    else {
+    else if (this.act0tal1 == 3){
       this.eventoService.deleteSocial(this.idToEliminate).subscribe(res => {
+        const resaux = res as { message: string };
+        M.toast({html: resaux.message, classes: 'rounded'});
+        for (let i = 0; i < this.redSocial.length; i++) {
+          if (this.redSocial[i]._id == this.idToEliminate) {
+            this.redSocial.splice(i, 1);
+          }
+        }
+      });
+    }
+    else {
+      this.eventoService.deletePromocion(this.idToEliminate).subscribe(res => {
         const resaux = res as { message: string };
         M.toast({html: resaux.message, classes: 'rounded'});
         for (let i = 0; i < this.redSocial.length; i++) {

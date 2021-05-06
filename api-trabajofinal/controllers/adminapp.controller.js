@@ -124,6 +124,7 @@ adminappCtrl.createPromocion = async (req, res) => {
     try{
         const promocion = new Promocion({
             nombre: req.body.nombre,
+            descripcion: req.body.descripcion,
             img: req.body.img,
         });
         await promocion.save();
@@ -137,6 +138,7 @@ adminappCtrl.editPromocion = async (req, res) => {
     try{
         const promocion = {
             nombre: req.body.nombre,
+            descripcion: req.body.descripcion,
             img: req.body.img,
         };
         await Promocion.findByIdAndUpdate(req.params.id,{$set: promocion}, {new:true, useFindAndModify:false});

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" defaultHref="/" style="color: white"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-card>
+    <ion-img [src]="promocion.img"></ion-img>
+    <ion-card-header>
+      <ion-card-title class="ion-text-capitalize" style="font-size: 1.5rem; margin-bottom: 10px;">{{promocion.nombre}}</ion-card-title>
+      <div style="width: 100%; border-bottom: #428cff solid 1px; margin-bottom: 15px; margin-top: 15px"></div>
+    </ion-card-header>
+
+    <ion-card-content style="margin-top: 10px">
+      <ion-card-title style="font-size: 1.2rem; margin-bottom: 10px">Descripción</ion-card-title>
+      <ion-label>
+        {{promocion.descripcion}}
+      </ion-label>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

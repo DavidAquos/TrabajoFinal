@@ -66,7 +66,7 @@ eventappCtrl.getSociales = async (req, res) => {
     res.json(social);
 };
 
-eventappCtrl.getPromociones() = async (req, res) => {
+eventappCtrl.getPromocion = async (req, res) => {
     try{
         const promocion = await Promocion.findById(req.params.id);
         if (promocion == null){
@@ -78,7 +78,7 @@ eventappCtrl.getPromociones() = async (req, res) => {
     }
 };
 
-eventappCtrl.getPromocion() = async (req, res) => {
+eventappCtrl.getPromociones = async (req, res) => {
     const promocion = await Promocion.find().catch((err) => {
         res.status(500).json({message: err.message})
     });

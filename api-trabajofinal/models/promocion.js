@@ -3,6 +3,7 @@ const {Schema} = mongoose;
 
 const PromocionSchema = new Schema({
     nombre: String,
+    descripcion: String,
     img: String,
 });
 

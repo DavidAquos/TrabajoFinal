@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="card" style="padding: 30px">
+    <form #actForm="ngForm">
+      <div class="input-field input-div">
+        <input id="nombre" type="text" name="nombre" [(ngModel)]="ngModel.nombre">
+        <label id="label1" for="nombre" class="text-input">Nombre promoción</label>
+      </div>
+      <div class="input-field input-div">
+        <input id="descripcion" type="text" name="descripcion" [(ngModel)]="ngModel.descripcion">
+        <label id="label2" for="descripcion" class="text-input">Descripción promoción</label>
+      </div>
+      <div class="row valign-wrapper">
+        <div class="col s6">
+          <label class="text-input">Imagen de la promoción</label>
+          <div class="file-field input-field" style="margin-top: 15px">
+            <div class="btn">
+              <span>File</span>
+              <input type="file" accept="image/*" (change)="onSelectFile($event, 1)" id="img-uploader">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" accept="image/*" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <img [src]="img"
+               style="max-width: 100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 50px">
+        <div class="col s1"></div>
+        <a class="waves-effect waves-light btn-large col s5 m4" routerLink="/">Cancelar</a>
+        <div class="col s1 m2"></div>
+        <button class="waves-effect waves-light btn-large col s5 m4" type="button" (click)="guardarPromocion(actForm)">
+          Guardar
+        </button>
+        <div class="col s1"></div>
+      </div>
+    </form>
+  </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Guardando promoción</h4>
+      <p>{{alertBody}}</p>
+      <progress id="img-upload-bar" value="0" max="100" style="width: 100%; margin: 10px 0;"></progress>
+    </div>
+  </div>
+</div>

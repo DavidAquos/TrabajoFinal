@@ -21,7 +21,7 @@ export class DataService {
   }
 
   getPromociones() {
-    return this.http.get(this.URL_API + '/promociones');
+    return this.http.get(this.URL_API + '/promocion');
   }
 
   // tslint:disable-next-line:variable-name

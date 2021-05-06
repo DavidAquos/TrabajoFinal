@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Producto} from "../models/Producto";
 import {Cupon} from "../models/Cupon";
 import {RedSocial} from "../models/RedSocial";
+import {Promocion} from "../models/Promocion";
 
 @Injectable({
   providedIn: 'root'
@@ -73,5 +74,25 @@ export class EventoService {
 
   postSocial(social: RedSocial) {
     return this.http.post(this.URL_API_ADMIN + '/social', social);
+  }
+
+  getPromociones() {
+    return this.http.get( this.URL_API_EVENT + '/promocion');
+  }
+
+  getPromocion(id: string) {
+    return this.http.get(this.URL_API_EVENT + `/promocion/${id}`);
+  }
+
+  deletePromocion (_id: string){
+    return this.http.delete( this.URL_API_ADMIN + `/promocion/${_id}` );
+  }
+
+  putPromocion (id: String, promocion: Promocion){
+    return this.http.put(this.URL_API_ADMIN + `/promocion/${id}`, promocion);
+  }
+
+  postPromocion(promocion: Promocion) {
+    return this.http.post(this.URL_API_ADMIN + '/promocion', promocion);
   }
 }

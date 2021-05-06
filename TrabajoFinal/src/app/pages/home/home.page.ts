@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from "../../services/data.service";
-import {RedSocial} from "../../interface/interface";
+import {Promocion, RedSocial} from "../../interface/interface";
 
 @Component({
   selector: 'app-home',
@@ -10,13 +10,16 @@ import {RedSocial} from "../../interface/interface";
 export class HomePage implements OnInit {
 
   redSocial: RedSocial[] = [];
+  promociones: Promocion[] = [];
 
   constructor(private dataService: DataService) { }
 
   async ngOnInit() {
     this.dataService.getSocial().subscribe(res => {
       this.redSocial = res as RedSocial[];
-      console.log(this.redSocial);
+    });
+    this.dataService.getPromociones().subscribe(res => {
+      this.promociones = res as Promocion[];
     });
   }
 

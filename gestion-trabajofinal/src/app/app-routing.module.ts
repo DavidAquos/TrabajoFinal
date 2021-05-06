@@ -5,6 +5,7 @@ import {ProductoComponent} from "./components/producto/producto.component";
 import {CuponComponent} from "./components/cupon/cupon.component";
 import {LoginComponent} from "./components/login/login.component";
 import {SocialComponent} from "./components/social/social.component";
+import {PromocionComponent} from "./components/promocion/promocion.component";
 
 const routes: Routes = [
   {
@@ -44,6 +45,14 @@ const routes: Routes = [
   {
     path: 'social/:id',
     component: SocialComponent
+  },
+  {
+    path: 'promocion',
+    component: PromocionComponent
+  },
+  {
+    path: 'promocion/:id',
+    component: PromocionComponent
   },
 ];
 
