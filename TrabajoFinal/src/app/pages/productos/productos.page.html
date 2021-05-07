@@ -7,7 +7,7 @@
 <ion-content>
 
   <div style="display: grid; margin-right: 8px; grid-template-columns: auto auto;">
-    <ion-card style="margin-right: 0; margin-bottom: 0" *ngFor="let p of productos" (click)="agregarCarrito()">
+    <ion-card style="margin-right: 0; margin-bottom: 0" *ngFor="let p of productos" [routerLink]="['/producto/', p._id]">
       <ion-card-header style="padding: 0;">
         <ion-img style="height: 100px; object-fit: cover;" src="{{p.img}}"></ion-img>
       </ion-card-header>

@@ -34,7 +34,7 @@ eventappCtrl.getProducto = async (req, res) => {
     }
 };
 
-//Get un cupon por id
+//Get un cupon por id (usar un metodo para consultar si se puede usar un cupon)
 eventappCtrl.getCupon = async (req, res) => {
     try{
         const cupon = await Cupon.findById(req.params.id);

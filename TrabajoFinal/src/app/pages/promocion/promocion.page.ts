@@ -18,7 +18,6 @@ export class PromocionPage implements OnInit {
     const param = this.activatedRoute.snapshot.paramMap.get('id');
     this.dataService.getPromocion(param).subscribe(res => {
       this.promocion = res as Promocion;
-      console.log(this.promocion.descripcion);
     });
   }
 

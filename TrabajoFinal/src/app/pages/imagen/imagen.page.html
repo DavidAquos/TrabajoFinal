@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" defaultHref="/" style="color: white"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content style="background-color: black">
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        <div class="swiper-zoom-container">
+          <img [src]="img">
+        </div>
+      </ion-slide>
+    </ion-slides>
+</ion-content>
