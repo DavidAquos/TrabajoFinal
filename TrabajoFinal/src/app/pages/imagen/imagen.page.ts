@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
 import {ActivatedRoute} from "@angular/router";
-import {Promocion} from "../../interface/interface";
+import {Producto, Promocion} from "../../interface/interface";
 
 @Component({
   selector: 'app-imagen',

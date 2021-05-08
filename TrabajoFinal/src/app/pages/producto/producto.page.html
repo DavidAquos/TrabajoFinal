@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" defaultHref="/" style="color: white"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-card>
+    <ion-img [src]="producto.img"></ion-img>
+    <ion-card-header>
+      <ion-card-title class="ion-text-capitalize"
+                      style="font-size: 1.5rem; margin-bottom: 10px;">{{producto.nombre}}</ion-card-title>
+      <div style="width: 100%; border-bottom: #428cff solid 1px; margin-bottom: 15px; margin-top: 15px"></div>
+    </ion-card-header>
+
+    <ion-card-content style="margin-top: 10px">
+      <ion-card-title style="font-size: 1.2rem; margin-bottom: 10px">Descripción</ion-card-title>
+      <ion-label style="font-size: 1.2em;font-weight: bold;">
+        {{producto.descripcion}}
+      </ion-label>
+      <div style="width: 100%; border-bottom: #428cff solid 1px; margin-bottom: 15px; margin-top: 15px"></div>
+      <ion-label style="font-size: 1.2em;font-weight: bold;">
+        Precio:
+      </ion-label>
+      {{producto.precio}} €
+      <div style="width: 100%; border-bottom: #428cff solid 1px; margin-bottom: 15px; margin-top: 15px"></div>
+      <div style="display: flex">
+        <div style="display: flex">
+          <ion-label style="font-size: 1.2em;font-weight: bold;">
+            Código:
+          </ion-label>
+          <ion-chip>{{producto.codigo}}</ion-chip>
+        </div>
+        <div style="display: flex; align-items: end; width: 100%">
+          <ion-img src="../../assets/images/cart.png" style="height: 40px; width: 40px"></ion-img>
+        </div>
+      </div>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
