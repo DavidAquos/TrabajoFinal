@@ -28,13 +28,13 @@
       <div style="width: 100%; border-bottom: #428cff solid 1px; margin-bottom: 15px; margin-top: 15px"></div>
       <div style="display: flex">
         <div style="display: flex">
-          <ion-label style="font-size: 1.2em;font-weight: bold;">
+          <ion-label style="font-size: 1.2em;font-weight: bold;margin-top: 5px">
             Código:
           </ion-label>
           <ion-chip>{{producto.codigo}}</ion-chip>
         </div>
         <div style="display: flex; align-items: end; width: 100%">
-          <ion-img src="../../assets/images/cart.png" style="height: 40px; width: 40px"></ion-img>
+          <ion-img src="../../assets/images/cart.png" style="height: 40px; width: 40px" (click)="agregarCarrito()"></ion-img>
         </div>
       </div>
     </ion-card-content>
