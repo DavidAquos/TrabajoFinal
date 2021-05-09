@@ -19,4 +19,10 @@ router.get('/social',  async (req, res) => {eventAppCtrl.getSociales(req,res);})
 router.get('/promocion',  async (req, res) => {eventAppCtrl.getPromociones(req,res);});
 router.get('/promocion/:id',  async (req, res) => {eventAppCtrl.getPromocion(req,res);});
 
+
+router.post('/pedido',  async (req, res) => {await eventAppCtrl.createPedido(req, res);});
+router.delete('/pedido/:id',  async (req, res) => {await eventAppCtrl.deletePedido(req, res);});
+router.put('/pedido/:id',  async (req, res) => {await eventAppCtrl.editPedido(req, res);});
+router.get('/pedido',  async (req, res) => {await eventAppCtrl.getOnePedido(req, res);});
+
 module.exports = router;

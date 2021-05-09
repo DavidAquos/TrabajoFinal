@@ -10,14 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="carrito puesto correptamente">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Cambiado profile y home nova">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/components/tabs/tabs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/components/tabs/tabs.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/models/pedido.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/models/pedido.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +39,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1qT7hfjnZYuNJLU6M4RHbPxq71K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -109,7 +121,7 @@
       <workItem from="1620374002652" duration="6380000" />
       <workItem from="1620408807348" duration="1085000" />
       <workItem from="1620508018379" duration="3341000" />
-      <workItem from="1620562656441" duration="3308000" />
+      <workItem from="1620562656441" duration="13708000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -230,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620563330504</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Cambiado profile y home nova">
+      <created>1620574426694</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1620574426694</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +289,7 @@
     <MESSAGE value="producto individual" />
     <MESSAGE value="Proyecto final" />
     <MESSAGE value="carrito puesto correptamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="carrito puesto correptamente" />
+    <MESSAGE value="Cambiado profile y home nova" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambiado profile y home nova" />
   </component>
 </project>

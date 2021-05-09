@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {Producto} from "../../../../gestion-trabajofinal/src/app/models/Producto";
+import {Pedido} from "../interface/interface";
+import {Cupon} from "../../../../gestion-trabajofinal/src/app/models/Cupon";
 
 @Injectable({
   providedIn: 'root'
@@ -31,6 +34,18 @@ export class DataService {
 
   getSocial() {
     return this.http.get(this.URL_API + /social/);
+  }
+
+  postPedido (pedido: Pedido){
+    return this.http.post(this.URL_API + '/pedido', pedido);
+  }
+
+  putPedido (id: String, pedido: Pedido){
+    return this.http.put(this.URL_API + `/pedido/${id}`, pedido);
+  }
+
+  getPedido (){
+    return this.http.get(this.URL_API + '/pedido');
   }
 
 }

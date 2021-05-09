@@ -5,10 +5,11 @@ const PedidoSchema = new Schema({
     entrega: Number,
     servicio: Number,
     envio: Number,
-    precio_productos: Number,
+    precio_productos: [Number],
     descuento_codigo: Number,
     total: Number,
     metodo_pago: String,
+    nombre_productos: [String]
 });
 
 module.exports = mongoose.model('Pedido', PedidoSchema);

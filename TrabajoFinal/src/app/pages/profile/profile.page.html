@@ -49,12 +49,10 @@
         <ion-input mode="md" type="number" [(ngModel)]="usuario.telefono" name="telefono"></ion-input>
       </ion-item>
       <br>
-      <ion-button expand="block" class="margen" type="submit" style="margin-top: 20px" [disabled]="formulario.invalid"
-                  (click)="registro()">Guardar
-      </ion-button>
     </form>
     <ion-list>
       <ion-item>
+        <ion-label>Nombre</ion-label>
         <ion-label>Nombre</ion-label>
       </ion-item>
       <ion-item>
@@ -65,6 +63,12 @@
       </ion-item>
       <ion-item>
         <ion-label>Teléfono</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tarjeta de crédito</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>PayPal</ion-label>
       </ion-item>
     </ion-list>
 

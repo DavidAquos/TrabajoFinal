@@ -99,28 +99,9 @@
         </tbody>
       </table>
     </div>
-    <h5>Imagen del mapa</h5>
-    <div class="file-field input-field" style="margin-top: 15px">
-      <div class="btn">
-        <span>File</span>
-        <input type="file" accept="image/*" (change)="onSelectFile($event)">
-      </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" accept="image/*" type="text">
-      </div>
-    </div>
-    <div class="center-align">
-      <img [src]="img"
-           style="max-width: 50%; align-self: center">
-    </div>
-    <div class="right-align" style="border: 20px">
-      <div class="btn" style=" font-size: 1.1em" (click)="guardarCambios()">
-        <span>Guardar cambios</span>
-      </div>
-    </div>
   </div>
 
-  <!-- Modal Structure -->
+  <!-- Modals -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>{{alertHead}}</h4>

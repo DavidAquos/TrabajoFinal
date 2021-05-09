@@ -40,10 +40,11 @@ export interface Pedido {
   entrega: number; // si va a ser entrega con o sin contacto (1 con contacto, 2 sin contacto , 3 etc)
   servicio: number; // Precio del servicio
   envio: number; // Precio del envio
-  precio_productos: number; // Precio productos
+  precio_productos: number[]; // Precio productos orenado por array
   descuento_codigo: number; // Descuento del codigo
   total: number; // Suma de todo y resta del descuento
   metodo_pago: string; // Paypal o CC
+  nombre_productos: string[]; // Nombre productos orenado por array
 }
 
 export interface RedSocial {
