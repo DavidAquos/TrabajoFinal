@@ -10,8 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="producto individual">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Proyecto final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documento TFC.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentación proyecto final.odp" beforeDir="false" afterPath="$PROJECT_DIR$/Presentación proyecto final.odp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +105,8 @@
       <workItem from="1620285317777" duration="2606000" />
       <workItem from="1620374002652" duration="6380000" />
       <workItem from="1620408807348" duration="1085000" />
-      <workItem from="1620508018379" duration="2502000" />
+      <workItem from="1620508018379" duration="3341000" />
+      <workItem from="1620562656441" duration="490000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -210,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620509001190</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Proyecto final">
+      <created>1620514396644</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1620514396644</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +258,7 @@
     <MESSAGE value="promocion pagina unica" />
     <MESSAGE value="pagina imagen funcionando y promocion individual" />
     <MESSAGE value="producto individual" />
-    <option name="LAST_COMMIT_MESSAGE" value="producto individual" />
+    <MESSAGE value="Proyecto final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto final" />
   </component>
 </project>
