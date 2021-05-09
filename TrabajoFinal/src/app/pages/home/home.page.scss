@@ -4,6 +4,17 @@
   width: 240px;
 }
 
+.img-slider .img-sociales {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+.img-slider > div.sociales {
+  margin: 0 10px 0 10px;
+  width: 100px;
+}
+
 .img-slider {
   display: -webkit-box;
   overflow-x: scroll;

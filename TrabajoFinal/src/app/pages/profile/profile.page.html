@@ -26,7 +26,7 @@
       <br>
       <ion-list>
         <ion-item  mode="md" class="margen">
-          <ion-label position="floating">Email</ion-label>
+          <ion-label position="floating">Correo electrónico</ion-label>
           <ion-input mode="md" type="email" [(ngModel)]="usuario.email" name="email" email="true" required
                      pattern="^([a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"></ion-input>
         </ion-item>
@@ -53,5 +53,20 @@
                   (click)="registro()">Guardar
       </ion-button>
     </form>
+    <ion-list>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Correo electrónico</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Contraseña</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Teléfono</ion-label>
+      </ion-item>
+    </ion-list>
+
   </div>
 </ion-content>
