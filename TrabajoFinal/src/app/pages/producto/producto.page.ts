@@ -25,7 +25,6 @@ export class ProductoPage implements OnInit {
     });
     this.dataService.getPedido().subscribe(res => {
       this.pedido = res as Pedido;
-      console.log(res);
     });
   }
 

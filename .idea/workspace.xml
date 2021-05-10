@@ -10,18 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Cambiado profile y home nova">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Cesta medio funcional ya">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-trabajofinal/models/pedido.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/models/pedido.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practicas" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -121,7 +116,9 @@
       <workItem from="1620374002652" duration="6380000" />
       <workItem from="1620408807348" duration="1085000" />
       <workItem from="1620508018379" duration="3341000" />
-      <workItem from="1620562656441" duration="13708000" />
+      <workItem from="1620562656441" duration="14476000" />
+      <workItem from="1620632446471" duration="655000" />
+      <workItem from="1620684137334" duration="3550000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -249,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620574426694</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Cesta medio funcional ya">
+      <created>1620600926561</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1620600926561</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +294,7 @@
     <MESSAGE value="Proyecto final" />
     <MESSAGE value="carrito puesto correptamente" />
     <MESSAGE value="Cambiado profile y home nova" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambiado profile y home nova" />
+    <MESSAGE value="Cesta medio funcional ya" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cesta medio funcional ya" />
   </component>
 </project>

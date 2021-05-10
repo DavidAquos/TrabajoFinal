@@ -48,4 +48,7 @@ export class DataService {
     return this.http.get(this.URL_API + '/pedido');
   }
 
+  deletePedido (_id: string){
+    return this.http.delete( this.URL_API + `/pedido/${_id}` );
+  }
 }
