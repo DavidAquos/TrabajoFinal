@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
-import {ActivatedRoute} from "@angular/router";
-import {AlertController} from "@ionic/angular";
 import {Pedido} from "../../interface/interface";
 
 @Component({
@@ -15,17 +13,7 @@ export class CartPage implements OnInit {
   buttonPuerta: any;
   buttonSinContacto: any;
   precioPedido: number;
-  pedido: Pedido = {
-    _id: '',
-    entrega: 0,
-    precio_productos: [],
-    nombre_productos: [],
-    envio: 0,
-    descuento_codigo: 0,
-    metodo_pago: '',
-    servicio: 0,
-    total: 0
-  };
+  pedido: Pedido;
   precioTotal: number;
   precioServicio: number;
   precioEnvio: number;
@@ -47,14 +35,13 @@ export class CartPage implements OnInit {
     },
   ];
 
-  constructor(private dataService: DataService, private activatedRoute: ActivatedRoute) {
+  constructor(private dataService: DataService) {
     this.precioPedido = 0;
     this.precioTotal = 0;
     this.precioServicio = 2.5;
     this.precioEnvio = 3;
     this.dataService.getPedido().subscribe(res => {
       this.pedido = res as Pedido;
-      console.log(this.pedido);
       if (!this.pedido) {
         document.getElementById('button-pagar').classList.add('button-disabled');
       }
@@ -71,7 +58,7 @@ export class CartPage implements OnInit {
     this.buttonSinContacto.classList.add('button-disabled');
     this.buttonPuerta.classList.remove('button-disabled');
     this.entrega = 1;
-    console.log(this.pedido);
+    this.pedido.entrega = 1;
   }
 
   clickEntregaSinContacto() {
@@ -80,15 +67,15 @@ export class CartPage implements OnInit {
     this.buttonPuerta.classList.add('button-disabled');
     this.buttonSinContacto.classList.remove('button-disabled');
     this.entrega = 2;
+    this.pedido.entrega = 2;
   }
 
   async ngOnInit() {
     this.entrega = 1;
     this.buttonPuerta = document.getElementById('button-dejar-en-la-puerta');
     this.buttonSinContacto = document.getElementById('button-sin-contacto');
-    this.buttonPuerta.addEventListener('click', this.clickButtonEnLaPuerta);
-    this.buttonSinContacto.addEventListener('click', this.clickEntregaSinContacto);
-
+    this.buttonPuerta.addEventListener('click', this.clickButtonEnLaPuerta.bind(this));
+    this.buttonSinContacto.addEventListener('click', this.clickEntregaSinContacto.bind(this));
   }
 
   alClicar(variable) {
@@ -108,7 +95,7 @@ export class CartPage implements OnInit {
 
   pagar() {
     let pago = this.datos.find(s => s.seleccionado);
-    this.dataService.postPedido(this.pedido).subscribe(res => {
+    this.dataService.putPedido(this.pedido._id,this.pedido).subscribe(res => {
       this.dataService.getPedido().subscribe(res => {
         this.pedido = res as Pedido;
       });

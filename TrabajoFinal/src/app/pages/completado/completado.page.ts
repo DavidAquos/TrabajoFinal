@@ -36,12 +36,13 @@ export class CompletadoPage implements OnInit {
       else {
         this.tipoEntrega = 'Entrega sin contacto';
       }
-      console.log('Entrega: ', this.tipoEntrega);
     });
   }
 
-  ngOnInit() {
-
+  ngOnInit() {/*
+    setTimeout(function () {
+    window.location.href = "/tabs/home";
+  }, 4000);*/
   }
 
 }
