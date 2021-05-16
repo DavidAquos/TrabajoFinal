@@ -10,13 +10,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Cesta medio funcional ya">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="HOME FINKITAISIMO OKEY">
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-trabajofinal/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/auth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-trabajofinal/middleware/authjwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-trabajofinal/routes/auth.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/home/home.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/models/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/models/usuario.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/cabecera/cabecera.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/cabecera/cabecera.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/home/home.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -118,7 +132,13 @@
       <workItem from="1620508018379" duration="3341000" />
       <workItem from="1620562656441" duration="14476000" />
       <workItem from="1620632446471" duration="655000" />
-      <workItem from="1620684137334" duration="3550000" />
+      <workItem from="1620684137334" duration="3953000" />
+      <workItem from="1620741419416" duration="1143000" />
+      <workItem from="1620853572234" duration="4159000" />
+      <workItem from="1620890776676" duration="571000" />
+      <workItem from="1621002239643" duration="622000" />
+      <workItem from="1621113857885" duration="4227000" />
+      <workItem from="1621182524950" duration="4538000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -253,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620600926561</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="HOME FINKITAISIMO OKEY">
+      <created>1620688309638</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1620688309638</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +322,7 @@
     <MESSAGE value="carrito puesto correptamente" />
     <MESSAGE value="Cambiado profile y home nova" />
     <MESSAGE value="Cesta medio funcional ya" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cesta medio funcional ya" />
+    <MESSAGE value="HOME FINKITAISIMO OKEY" />
+    <option name="LAST_COMMIT_MESSAGE" value="HOME FINKITAISIMO OKEY" />
   </component>
 </project>

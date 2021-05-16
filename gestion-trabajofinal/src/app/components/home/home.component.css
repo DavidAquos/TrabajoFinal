@@ -21,3 +21,17 @@ td{
 th{
   border-bottom: 1px solid #6a6a6a;
 }
+
+h5 {
+  color: white;
+  padding-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #ffffffb5;
+}
+
+thead tr th {
+  color: white;
+  letter-spacing: 2.5px;
+}

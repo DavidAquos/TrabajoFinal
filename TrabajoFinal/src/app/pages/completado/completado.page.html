@@ -1,0 +1,17 @@
+<ion-content>
+  <div style="margin: 15px;" class="ion-align-items-center">
+    <h3 style="text-align: center; margin-top: 20px">Pedido completado!</h3>
+    <div class="content-wrapper" style="padding: 0px 15px; margin-bottom: 10px">
+      <div style="color: grey; margin-top: 30px; border-bottom: 1px solid grey;">Resumen del pedido</div>
+    </div>
+    <ion-list *ngFor="let p of nombreProductos">
+      <ion-item>{{p}}</ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item style="color: #66ff66;">Total: </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>Tipo de entrega: {{tipoEntrega}}</ion-item>
+    </ion-list>
+  </div>
+</ion-content>

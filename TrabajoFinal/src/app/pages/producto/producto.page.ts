@@ -37,7 +37,7 @@ export class ProductoPage implements OnInit {
         role: 'cancel',
         cssClass: 'secondary',
         handler: () => {
-          console.log('Producto cancelado');
+
         }
       },
         {
@@ -56,11 +56,10 @@ export class ProductoPage implements OnInit {
               this.dataService.postPedido(this.pedido).subscribe(res => {
                 this.dataService.getPedido().subscribe(res => {
                   this.pedido = res as Pedido;
-                  console.log(res);
                 });
               });
             }
-            console.log('Producto agregado');
+
           }
         }]
     });

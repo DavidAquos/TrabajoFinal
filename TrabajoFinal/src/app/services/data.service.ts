@@ -12,7 +12,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   logged = false;
-  ticketsCard: {nombre: string, precio: number, cant: number}[] = [];
   URL_API = 'http://localhost:3000/api/eventapp';
 
   getProductos() {
