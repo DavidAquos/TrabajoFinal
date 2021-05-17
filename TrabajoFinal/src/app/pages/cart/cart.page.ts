@@ -48,7 +48,7 @@ export class CartPage implements OnInit {
       for (let i = 0; i < this.pedido.precio_productos.length; i++) {
         this.precioPedido += this.pedido.precio_productos[i];
       }
-      this.precioTotal = this.precioEnvio + this.precioPedido + this.precioServicio;
+      this.precioTotal = this.precioEnvio + this.precioPedido + this.precioServicio; // Falta poner que se reste el cupón
     });
   }
 
@@ -57,8 +57,8 @@ export class CartPage implements OnInit {
     this.buttonSinContacto = document.getElementById('button-sin-contacto');
     this.buttonSinContacto.classList.add('button-disabled');
     this.buttonPuerta.classList.remove('button-disabled');
-    this.entrega = 1;
-    this.pedido.entrega = 1;
+    this.entrega = 0;
+    this.pedido.entrega = 0;
   }
 
   clickEntregaSinContacto() {
@@ -66,12 +66,12 @@ export class CartPage implements OnInit {
     this.buttonSinContacto = document.getElementById('button-sin-contacto');
     this.buttonPuerta.classList.add('button-disabled');
     this.buttonSinContacto.classList.remove('button-disabled');
-    this.entrega = 2;
-    this.pedido.entrega = 2;
+    this.entrega = 1;
+    this.pedido.entrega = 1;
   }
 
   async ngOnInit() {
-    this.entrega = 1;
+    this.entrega = 0;
     this.buttonPuerta = document.getElementById('button-dejar-en-la-puerta');
     this.buttonSinContacto = document.getElementById('button-sin-contacto');
     this.buttonPuerta.addEventListener('click', this.clickButtonEnLaPuerta.bind(this));

@@ -27,22 +27,22 @@ export class CompletadoPage implements OnInit {
   constructor(private dataService: DataService, private activatedRoute: ActivatedRoute) {
     this.dataService.getPedido().subscribe(res => {
       this.pedido = res as Pedido;
-      console.log(this.pedido);
       this.nombreProductos = this.pedido.nombre_productos;
-      console.log('Nombre productos: ',this.nombreProductos);
-      if (this.pedido.entrega == 1){
+      if (this.pedido.entrega == 0){
         this.tipoEntrega = 'Entrega en mano';
       }
       else {
         this.tipoEntrega = 'Entrega sin contacto';
       }
+      console.log(this.pedido._id);
+      this.dataService.deletePedido(this.pedido._id);
     });
   }
 
-  ngOnInit() {/*
+  ngOnInit() {
     setTimeout(function () {
     window.location.href = "/tabs/home";
-  }, 4000);*/
+  }, 4000);
   }
 
 }

@@ -12,7 +12,7 @@ import {AlertController} from "@ionic/angular";
 export class ProductoPage implements OnInit {
 
   producto: Producto = {_id: '', nombre: '', precio: 0, descripcion: '', codigo: '' ,img: ''};
-  pedido: Pedido = {_id: '', entrega: 0, precio_productos: [], nombre_productos: [], envio: 0, descuento_codigo: 0, metodo_pago: '', servicio: 0, total: 0 };
+  pedido: Pedido = {_id: '', entrega: 1, precio_productos: [], nombre_productos: [], envio: 0, descuento_codigo: 0, metodo_pago: '', servicio: 0, total: 0 };
 
   constructor(private dataService: DataService, private activatedRoute: ActivatedRoute, private alertCtrl: AlertController) {
 

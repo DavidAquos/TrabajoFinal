@@ -10,12 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Pedido completado a medias + auth + carrito a medias">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Funcionando ya el carritillo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/producto/producto.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practicas" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -125,6 +124,7 @@
       <workItem from="1621113857885" duration="4227000" />
       <workItem from="1621182524950" duration="4590000" />
       <workItem from="1621205017485" duration="2662000" />
+      <workItem from="1621207943162" duration="3504000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -273,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621189327116</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Funcionando ya el carritillo">
+      <created>1621207956745</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1621207956745</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +324,7 @@
     <MESSAGE value="Cesta medio funcional ya" />
     <MESSAGE value="HOME FINKITAISIMO OKEY" />
     <MESSAGE value="Pedido completado a medias + auth + carrito a medias" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pedido completado a medias + auth + carrito a medias" />
+    <MESSAGE value="Funcionando ya el carritillo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcionando ya el carritillo" />
   </component>
 </project>
