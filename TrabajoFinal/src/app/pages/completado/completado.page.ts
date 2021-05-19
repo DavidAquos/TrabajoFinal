@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
 import {ActivatedRoute} from "@angular/router";
-import {Pedido} from "../../interface/interface";
+import {Cupon, Pedido} from "../../interface/interface";
 
 @Component({
   selector: 'app-completado',
@@ -23,26 +23,52 @@ export class CompletadoPage implements OnInit {
   };
   nombreProductos: string[];
   tipoEntrega: string;
+  precioPedido: number;
+  precioTotal: number;
+  precioServicio: number;
+  precioEnvio: number;
+  descuentoCupon: number;
+  cupon: Cupon = {
+    _id: '',
+    nombre: '',
+    descuento: 0,
+    caducidad: ''
+  };
 
   constructor(private dataService: DataService, private activatedRoute: ActivatedRoute) {
-    this.dataService.getPedido().subscribe(res => {
-      this.pedido = res as Pedido;
-      this.nombreProductos = this.pedido.nombre_productos;
-      if (this.pedido.entrega == 0){
-        this.tipoEntrega = 'Entrega en mano';
-      }
-      else {
-        this.tipoEntrega = 'Entrega sin contacto';
-      }
-      console.log(this.pedido._id);
-      this.dataService.deletePedido(this.pedido._id);
-    });
+    this.cargarDatos();
   }
 
-  ngOnInit() {
+  ngOnInit() {/*
     setTimeout(function () {
     window.location.href = "/tabs/home";
-  }, 4000);
+  }, 4000);*/
+  }
+
+  cargarDatos() {
+    this.dataService.getPedido().subscribe(res => {
+      this.precioPedido = 0;
+      this.precioTotal = 0;
+      this.precioServicio = 2.5;
+      this.precioEnvio = 3;
+      this.pedido = res as Pedido;
+      this.nombreProductos = this.pedido.nombre_productos;
+      if (this.pedido.entrega == 0) {
+        this.tipoEntrega = 'Entrega en mano';
+      } else {
+        this.tipoEntrega = 'Entrega sin contacto';
+      }
+      for (let i = 0; i < this.pedido.precio_productos.length; i++) {
+        this.precioPedido += this.pedido.precio_productos[i];
+      }
+      // hace falta mover esto, da fallo
+      this.dataService.getCupon('6092ce6661acd045345ba236').subscribe(res => {
+        this.cupon = res as Cupon;
+        this.descuentoCupon = this.cupon.descuento;
+        this.dataService.deletePedido(this.pedido._id);
+        this.precioTotal = parseFloat(((this.precioEnvio + this.precioPedido + this.precioServicio) - this.descuentoCupon).toFixed(2)); // falta poner - this.descuento.cupon
+      });
+    });
   }
 
 }

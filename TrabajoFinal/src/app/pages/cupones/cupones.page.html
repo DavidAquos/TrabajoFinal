@@ -11,8 +11,8 @@
       <h3 style="border-bottom: 1px solid grey;text-align: left;padding-bottom: 8px;padding-left: 5px;" class="playername">Introducir cupón</h3>
       <ion-item style="border: 1px solid grey; border-radius: 5px;" mode="md" class="margen">
         <form #actForm="ngForm"></form>
-        <ion-input id="cupon" [(ngModel)]="cupon" (keydown)="onchange(actForm)" class="input" style="height: 48px;" type="text" name="cupon"></ion-input>
-        <ion-icon class="input-ico" slot="end" [name]="'checkmark-sharp'" (click)="enviar()" style="margin-top: 15px"></ion-icon>
+        <ion-input id="cupon" [(ngModel)]="ngModel.nombre" class="input" style="height: 48px;" type="text" name="cupon"></ion-input>
+        <ion-icon class="input-ico" slot="end" [name]="'checkmark-sharp'" (click)="enviar(actForm)" style="margin-top: 15px"></ion-icon>
       </ion-item>
 
     </div>

@@ -5,7 +5,6 @@
 </ion-header>
 
 <ion-content>
-
   <div style="display: grid; margin-right: 8px; grid-template-columns: auto auto;">
     <ion-card style="margin-right: 0; margin-bottom: 0" *ngFor="let p of productos" [routerLink]="['/producto/', p._id]">
       <ion-card-header style="padding: 0;">
@@ -15,10 +14,9 @@
       <ion-card-content style="padding-bottom: 0;margin: 8px 0 8px 0;">
         <div style="display: flex; justify-content: space-between;">
           <div>
-            <ion-label>{{p.precio}}€</ion-label>
+            <ion-label>{{p.precio.toString() + '0'}}€</ion-label>
           </div>
           <div>
-            <ion-label>/</ion-label>
           </div>
           <div style="text-align: left">
             <ion-label color="primary">{{p.codigo}}</ion-label>
@@ -27,6 +25,5 @@
       </ion-card-content>
     </ion-card>
   </div>
-
 
 </ion-content>

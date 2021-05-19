@@ -10,6 +10,7 @@ router.get('/producto/:id', async (req, res) => {eventAppCtrl.getProducto(req,re
 
 router.get('/cupon',  async (req, res) => {eventAppCtrl.getCupones(req,res);});
 router.get('/cupon/:id',  async (req, res) => {eventAppCtrl.getCupon(req,res);});
+router.get('/cuponcode/:code',  async (req, res) => {eventAppCtrl.getCuponByCode(req,res);});
 
 
 router.get('/social/:id',  async (req, res) => {eventAppCtrl.getSocial(req,res);});

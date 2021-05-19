@@ -26,6 +26,18 @@ export class DataService {
     return this.http.get(this.URL_API + '/promocion');
   }
 
+  getCupon(_id: string) {
+    return this.http.get(this.URL_API + `/cupon/${_id}`);
+  }
+
+  getCuponByCode(code: string) {
+    return this.http.get(this.URL_API + `/cuponcode/${code}`);
+  }
+
+  getCupones() {
+    return this.http.get(this.URL_API + '/cupon');
+  }
+
   // tslint:disable-next-line:variable-name
   getPromocion(_id: string) {
     return this.http.get(this.URL_API + `/promocion/${_id}`);
@@ -48,6 +60,7 @@ export class DataService {
   }
 
   deletePedido (_id: string){
+    console.log(this.URL_API + `/pedido/${_id}`);
     return this.http.delete( this.URL_API + `/pedido/${_id}` );
   }
 }

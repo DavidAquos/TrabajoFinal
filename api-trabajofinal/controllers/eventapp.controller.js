@@ -48,6 +48,24 @@ eventappCtrl.getCupon = async (req, res) => {
     }
 };
 
+eventappCtrl.getCuponByCode = async (req, res) => {
+    try{
+        const cupon = await Cupon.findOne({nombre: req.params.code});
+        if (cupon == null) {
+            res.status(404).json({message: 'Cupon not found'});
+        }
+
+        const date = new Date(parseInt(cupon.caducidad.split('-')[2]), parseInt(cupon.caducidad.split('-')[1]) - 1, parseInt(cupon.caducidad.split('-')[0])).getTime();
+        if (date < new Date().getTime()) {
+            res.status(404).json({message: 'Cupon invalid'});
+        }
+
+        res.status(201).json(cupon);
+    }catch (e) {
+        res.status(500).json({message: e.message});
+    }
+};
+
 eventappCtrl.getSocial = async (req, res) => {
     try{
         const social = await Social.findById(req.params.id);
