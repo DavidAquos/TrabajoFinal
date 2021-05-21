@@ -13,9 +13,9 @@ import {Producto} from "../../../../../gestion-trabajofinal/src/app/models/Produ
 export class CuponesPage implements OnInit {
 
   ngModel: Cupon;
-  cupon: Cupon = {_id: '', nombre: '', descuento: 0, caducidad: ''};
+  cupon: Cupon = {_id: '', nombre: '', descuento: 0, caducidad: ''} ;
   constructor(public toastController: ToastController, private dataService: DataService) {
-    this.ngModel = new Cupon();
+    this.ngModel = {_id: '', nombre: '', descuento: 0, caducidad: ''};
   }
 
   ngOnInit() {
@@ -26,18 +26,21 @@ export class CuponesPage implements OnInit {
   }*/
 
   enviar(actForm: NgForm) {
-    console.log(actForm.value.nombre);
-    this.dataService.getCuponByCode(actForm.value.cupon).subscribe(res => {
-      this.cupon = res as Cupon;
-      console.log('Cupón recibido correctamente',this.cupon);
+      this.dataService.getCuponByCode(actForm.value.cupon).subscribe(res => {
+        this.cupon = res as Cupon;
+      },
+        error => {
+          this.presentToast('Cupón inválido');
+        },
+        () => {
+          this.presentToast('Cupón agregado correctamente!');
+          console.log('Cupón recibido correctamente', this.cupon);
+        });
+    }
 
-    });
-    this.presentToast();
-  }
-
-  async presentToast() {
+  async presentToast(mensaje: string) {
     const toast = await this.toastController.create({
-      message: 'Cupón añadido!',
+      message: mensaje,
       duration: 2000
     });
     await toast.present();

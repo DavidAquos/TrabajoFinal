@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
-import {Pedido} from "../../interface/interface";
+import {Cupon, Pedido} from "../../interface/interface";
+import {ActionSheetController} from "@ionic/angular";
 
 @Component({
   selector: 'app-cart',
@@ -17,6 +18,9 @@ export class CartPage implements OnInit {
   precioTotal: number;
   precioServicio: number;
   precioEnvio: number;
+  buttonCodigo: any;
+  descuentoCupon: number;
+  tiempoEstimado: number;
 
   datos = [
     {
@@ -35,11 +39,12 @@ export class CartPage implements OnInit {
     },
   ];
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private actionSheetController: ActionSheetController) {
     this.precioPedido = 0;
     this.precioTotal = 0;
     this.precioServicio = 2.5;
     this.precioEnvio = 3;
+    this.tiempoEstimado = Math.floor(Math.random() * 45) + 15;
     this.dataService.getPedido().subscribe(res => {
       this.pedido = res as Pedido;
       if (!this.pedido) {
@@ -48,7 +53,13 @@ export class CartPage implements OnInit {
       for (let i = 0; i < this.pedido.precio_productos.length; i++) {
         this.precioPedido += this.pedido.precio_productos[i];
       }
-      this.precioTotal = this.precioEnvio + this.precioPedido + this.precioServicio; // Falta poner que se reste el cupón
+      this.precioPedido = parseFloat(this.precioPedido.toFixed(2));
+      this.dataService.getCupon('6092ce6661acd045345ba236').subscribe(res => {
+        this.cupon = res as Cupon;
+        this.descuentoCupon = this.cupon.descuento;
+        this.dataService.deletePedido(this.pedido._id);
+        this.precioTotal = parseFloat(((this.precioEnvio + this.precioPedido + this.precioServicio) - this.descuentoCupon).toFixed(2));
+      });
     });
   }
 
@@ -70,12 +81,20 @@ export class CartPage implements OnInit {
     this.pedido.entrega = 1;
   }
 
+  clickCodigo() {
+    console.log('ola');
+    this.buttonCodigo = document.getElementById('button-codigo');
+    //this.presentActionSheet();
+  }
+
   async ngOnInit() {
     this.entrega = 0;
     this.buttonPuerta = document.getElementById('button-dejar-en-la-puerta');
     this.buttonSinContacto = document.getElementById('button-sin-contacto');
+    this.buttonCodigo = document.getElementById('button-codigo');
     this.buttonPuerta.addEventListener('click', this.clickButtonEnLaPuerta.bind(this));
     this.buttonSinContacto.addEventListener('click', this.clickEntregaSinContacto.bind(this));
+    this.buttonCodigo.addEventListener('click', this.clickCodigo.bind(this));
   }
 
   alClicar(variable) {
@@ -102,5 +121,39 @@ export class CartPage implements OnInit {
     });
   }
 
+
+  async presentActionSheet() {
+    const actionSheet = await this.actionSheetController.create({
+      header: 'Cupones',
+      cssClass: 'my-custom-class',
+      buttons: [{
+        text: 'Delete',
+        handler: () => {
+          console.log('Delete clicked');
+        }
+      }, {
+        text: 'Share',
+        handler: () => {
+          console.log('Share clicked');
+        }
+      }, {
+        text: 'Play (open modal)',
+        handler: () => {
+          console.log('Play clicked');
+        }
+      }, {
+        text: 'Favorite',
+        handler: () => {
+          console.log('Favorite clicked');
+        }
+      }, {
+        text: 'Cerrar',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+      }]
+    });
+    await actionSheet.present();
+  }
 
 }

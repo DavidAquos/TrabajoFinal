@@ -8,20 +8,41 @@
 
   <div class="card-body" style="margin: 10px 20px 0 20px;">
     <div class="user-meta ion-text-center">
-      <h3 style="border-bottom: 1px solid grey;text-align: left;padding-bottom: 8px;padding-left: 5px;" class="playername">Introducir cupón</h3>
+      <h3 style="border-bottom: 1px solid grey;text-align: left;padding-bottom: 8px;padding-left: 5px;"
+          class="playername">Introducir cupón</h3>
       <ion-item style="border: 1px solid grey; border-radius: 5px;" mode="md" class="margen">
-        <form #actForm="ngForm"></form>
-        <ion-input id="cupon" [(ngModel)]="ngModel.nombre" class="input" style="height: 48px;" type="text" name="cupon"></ion-input>
-        <ion-icon class="input-ico" slot="end" [name]="'checkmark-sharp'" (click)="enviar(actForm)" style="margin-top: 15px"></ion-icon>
-      </ion-item>
+        <form #actForm="ngForm">
+          <ion-input id="cupon" [(ngModel)]="ngModel.nombre" class="input" style="height: 48px;" type="text"
+                     name="cupon"></ion-input>
+          <ion-icon class="input-ico" slot="end" [name]="'checkmark-sharp'" (click)="enviar(actForm)"
+                    style="margin-top: 15px"></ion-icon>
+        </form> <!-- sa roto al mover el form-->
 
+      </ion-item>
     </div>
-    <div style="margin-top: 30px; margin-bottom: 20px; padding-bottom: 5px; border-bottom: 1px solid grey;">Cupones Anteriores</div>
-    <div style="display: flex; margin-bottom: 15px;"><div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div><div>25/02/2020</div></div>
-    <div style="display: flex; margin-bottom: 15px;"><div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div><div>25/02/2020</div></div>
-    <div style="display: flex; margin-bottom: 15px;"><div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div><div>25/02/2020</div></div>
-    <div style="display: flex; margin-bottom: 15px;"><div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div><div>25/02/2020</div></div>
-    <div style="display: flex; margin-bottom: 15px;"><div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div><div>25/02/2020</div></div>
+    <div style="margin-top: 30px; margin-bottom: 20px; padding-bottom: 5px; border-bottom: 1px solid grey;">Cupones
+      Anteriores
+    </div>
+    <div style="display: flex; margin-bottom: 15px;">
+      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
+      <div>25/02/2020</div>
+    </div>
+    <div style="display: flex; margin-bottom: 15px;">
+      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
+      <div>25/02/2020</div>
+    </div>
+    <div style="display: flex; margin-bottom: 15px;">
+      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
+      <div>25/02/2020</div>
+    </div>
+    <div style="display: flex; margin-bottom: 15px;">
+      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
+      <div>25/02/2020</div>
+    </div>
+    <div style="display: flex; margin-bottom: 15px;">
+      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
+      <div>25/02/2020</div>
+    </div>
   </div>
 
 </ion-content>

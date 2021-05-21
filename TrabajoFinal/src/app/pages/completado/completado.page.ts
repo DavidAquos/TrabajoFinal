@@ -60,13 +60,14 @@ export class CompletadoPage implements OnInit {
       }
       for (let i = 0; i < this.pedido.precio_productos.length; i++) {
         this.precioPedido += this.pedido.precio_productos[i];
+
       }
-      // hace falta mover esto, da fallo
+      parseFloat(this.precioPedido.toFixed(2));
       this.dataService.getCupon('6092ce6661acd045345ba236').subscribe(res => {
         this.cupon = res as Cupon;
         this.descuentoCupon = this.cupon.descuento;
         this.dataService.deletePedido(this.pedido._id);
-        this.precioTotal = parseFloat(((this.precioEnvio + this.precioPedido + this.precioServicio) - this.descuentoCupon).toFixed(2)); // falta poner - this.descuento.cupon
+        this.precioTotal = parseFloat(((this.precioEnvio + this.precioPedido + this.precioServicio) - this.descuentoCupon).toFixed(2));
       });
     });
   }

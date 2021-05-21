@@ -31,14 +31,6 @@ export class ProductoComponent implements OnInit {
   ngOnInit(): void {
     progressbar = document.getElementById('img-upload-bar');
     M.AutoInit();
-    document.addEventListener('DOMContentLoaded', function () {
-      const elems = document.querySelectorAll('.timepicker');
-      M.Timepicker.init(elems, {
-        defaultTime: '9:00',
-        twelveHour: false,
-        i18n: {cancel: 'Cancelar', done: 'Aceptar'}
-      });
-    });
     this.route.paramMap.subscribe(params => {
       if (params.has("id")) {
         this.eventService.getproducto(params.get("id") || "").subscribe(res => {
@@ -85,7 +77,7 @@ export class ProductoComponent implements OnInit {
 
   async guardarProducto(actForm: NgForm) {
     if (actForm.value.nombre != '' && actForm.value.descripcion != '' && actForm.value.precio != null && actForm.value.codigo != null) {
-      this.alertBody = 'Guardando imagen: ' + this.file1.name;
+      this.alertBody = 'Guardando producto ';
       const elems = document.getElementById('modal1');
       const instances = M.Modal.init(elems, {dismissible: false});
       instances.open();

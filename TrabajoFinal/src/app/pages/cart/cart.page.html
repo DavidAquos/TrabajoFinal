@@ -10,12 +10,12 @@
 
   <div style="margin: 15px;" class="ion-text-center">
     <ion-label style="display: flex; align-items: center; justify-content: center;">
-      Tiempo estimado: 45 minutos
+      Tiempo estimado: {{tiempoEstimado}} minutos
       <img src="../../../assets/images/clock.png" alt="Clock" style="margin-left: 5px;">
     </ion-label>
   </div>
 
-  <div class="content-wrapper" style="padding: 0px 15px;">
+  <div class="content-wrapper" id="button-codigo" style="padding: 0 15px;">
     <div id="button-promotion"
          style="padding: 15px;border: 1px solid darkgrey;border-radius: 4px;background: var(--ion-color-primary);">
       Activar código promocional
@@ -48,7 +48,7 @@
         </ion-card-subtitle>
         <ion-card-subtitle style="display: flex; justify-content: space-between; margin-bottom: 10px; color: #66ff66;">
           <div>Cupon</div>
-          <div>-10.00€</div>
+          <div>-{{this.descuentoCupon}}€</div>
         </ion-card-subtitle>
         <ion-card-subtitle style="display: flex; justify-content: space-between; font-size: 16px;">
           <div>Total</div>
