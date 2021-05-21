@@ -10,16 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Cupones medio funcionando">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="cupones y carrito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/productos/productos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/productos/productos.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/cabecera/cabecera.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/cabecera/cabecera.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/producto/producto.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gestion-trabajofinal/src/app/components/producto/producto.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,9 @@
       <workItem from="1621494695254" duration="269000" />
       <workItem from="1621495968713" duration="624000" />
       <workItem from="1621519150085" duration="5791000" />
-      <workItem from="1621582506090" duration="4877000" />
+      <workItem from="1621582506090" duration="6127000" />
+      <workItem from="1621617124545" duration="2125000" />
+      <workItem from="1621628101372" duration="1136000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -307,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621462645934</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="cupones y carrito">
+      <created>1621597525881</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1621597525881</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +361,7 @@
     <MESSAGE value="Funcionando ya el carritillo" />
     <MESSAGE value="avansando" />
     <MESSAGE value="Cupones medio funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cupones medio funcionando" />
+    <MESSAGE value="cupones y carrito" />
+    <option name="LAST_COMMIT_MESSAGE" value="cupones y carrito" />
   </component>
 </project>

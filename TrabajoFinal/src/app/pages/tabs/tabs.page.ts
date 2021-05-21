@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AlertController, PopoverController} from "@ionic/angular";
 import {DataService} from '../../services/data.service';
+import {Pedido} from "../../interface/interface";
 
 @Component({
   selector: 'app-tabs',
@@ -10,11 +11,10 @@ import {DataService} from '../../services/data.service';
 export class TabsPage implements OnInit {
 
   listTickets: any[];
+  pedido: Pedido;
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    //this.dataService.getTicketsVenta().subscribe(tickets => {
-    //  this.listTickets = tickets as any[];
-    //});
+
   }
 }

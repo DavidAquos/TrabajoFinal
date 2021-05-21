@@ -82,9 +82,8 @@ export class CartPage implements OnInit {
   }
 
   clickCodigo() {
-    console.log('ola');
     this.buttonCodigo = document.getElementById('button-codigo');
-    //this.presentActionSheet();
+    this.presentActionSheet();
   }
 
   async ngOnInit() {

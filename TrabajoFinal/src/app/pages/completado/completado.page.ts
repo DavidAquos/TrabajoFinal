@@ -39,10 +39,10 @@ export class CompletadoPage implements OnInit {
     this.cargarDatos();
   }
 
-  ngOnInit() {/*
+  ngOnInit() {
     setTimeout(function () {
     window.location.href = "/tabs/home";
-  }, 4000);*/
+  }, 4000);
   }
 
   cargarDatos() {
@@ -66,7 +66,7 @@ export class CompletadoPage implements OnInit {
       this.dataService.getCupon('6092ce6661acd045345ba236').subscribe(res => {
         this.cupon = res as Cupon;
         this.descuentoCupon = this.cupon.descuento;
-        this.dataService.deletePedido(this.pedido._id);
+        this.dataService.deletePedido(this.pedido._id).subscribe();
         this.precioTotal = parseFloat(((this.precioEnvio + this.precioPedido + this.precioServicio) - this.descuentoCupon).toFixed(2));
       });
     });
