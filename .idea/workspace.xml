@@ -10,14 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="cupones y carrito">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="cupon arreglado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/interface/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cart/cart.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/completado/completado.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tabs/tabs.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/adminapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/adminapp.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/auth.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/controllers/eventapp.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/models/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/models/usuario.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/adminapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/adminapp.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/auth.routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api-trabajofinal/routes/eventapp.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +145,9 @@
       <workItem from="1621519150085" duration="5791000" />
       <workItem from="1621582506090" duration="6127000" />
       <workItem from="1621617124545" duration="2125000" />
-      <workItem from="1621628101372" duration="1136000" />
+      <workItem from="1621628101372" duration="1929000" />
+      <workItem from="1621643147566" duration="645000" />
+      <workItem from="1621796385919" duration="9688000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -314,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621597525881</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="cupon arreglado">
+      <created>1621629397537</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1621629397537</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +379,7 @@
     <MESSAGE value="avansando" />
     <MESSAGE value="Cupones medio funcionando" />
     <MESSAGE value="cupones y carrito" />
-    <option name="LAST_COMMIT_MESSAGE" value="cupones y carrito" />
+    <MESSAGE value="cupon arreglado" />
+    <option name="LAST_COMMIT_MESSAGE" value="cupon arreglado" />
   </component>
 </project>

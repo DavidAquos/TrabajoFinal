@@ -26,4 +26,8 @@ router.delete('/pedido/:id',  async (req, res) => {await eventAppCtrl.deletePedi
 router.put('/pedido/:id',  async (req, res) => {await eventAppCtrl.editPedido(req, res);});
 router.get('/pedido',  async (req, res) => {await eventAppCtrl.getOnePedido(req, res);});
 
+
+router.put('/usuario/:id',  async (req, res) => {await eventAppCtrl.editUsuario(req, res);});
+router.get('/usuario',  async (req, res) => {await eventAppCtrl.getUsuario(req, res);});
+
 module.exports = router;

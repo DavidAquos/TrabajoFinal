@@ -25,6 +25,11 @@ router.delete('/promocion/:id',  async (req, res) => {await adminAppCtrl.deleteP
 router.put('/promocion/:id',  async (req, res) => {await adminAppCtrl.editPromocion(req, res);});
 
 
+router.post('/usuario',  async (req, res) => {await adminAppCtrl.createUsuario(req, res);});
+router.delete('/usuario/:id',  async (req, res) => {await adminAppCtrl.deleteUsuario(req, res);});
+router.put('/usuario/:id',  async (req, res) => {await adminAppCtrl.editUsuario(req, res);});
+
+
 // router.get('/private', async (req, res) => {res.status(200).json({ message: "Okey... Hi!" })});
 
 module.exports = router;

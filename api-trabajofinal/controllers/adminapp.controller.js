@@ -2,6 +2,7 @@ const Producto = require('../models/producto');
 const Cupon = require('../models/cupon');
 const Social = require('../models/redSocial');
 const Promocion = require('../models/promocion');
+const Usuario = require('../models/usuario');
 
 const adminappCtrl = {};
 
@@ -152,6 +153,36 @@ adminappCtrl.deletePromocion = async (req, res) => {
     try{
         await Promocion.findByIdAndDelete(req.params.id);
         res.status(200).json({message: 'Promocion deleted'});
+    }catch (e) {
+        res.status(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.createUsuario = async (req, res) => {
+    try{
+        const usuario = new Usuario({
+            nombre: req.body.nombre,
+            apellidos: req.body.apellidos,
+            num_telefono: req.body.num_telefono,
+            correo: req.body.correo,
+            pw: req.body.pw,
+            direcciones: req.body.direcciones,
+            datos_tarjeta: req.body.datos_tarjeta,
+            nivel: req.body.nivel,
+            id_cupones: req.body.id_cupones,
+            id_cupones_usado: req.body.id_cupones_usado,
+        });
+        await usuario.save();
+        res.status(201).json({message: 'Usuario creado'})
+    }catch (e) {
+        res.send(400).json({message: e.message});
+    }
+};
+
+adminappCtrl.deleteUsuario = async (req, res) => {
+    try{
+        await Usuario.findByIdAndDelete(req.params.id);
+        res.status(200).json({message: 'Usuario deleted'});
     }catch (e) {
         res.status(400).json({message: e.message});
     }

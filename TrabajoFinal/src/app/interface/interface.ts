@@ -31,8 +31,8 @@ export interface Usuario {
   direcciones: string[]; // Array que guarda las 2 direcciones de la tarjeta
   datos_tarjeta: string;
   nivel: string;
-  cupones: string[]; // Array que guarda todos los cupones del usuario
-  cupones_usado: string[]; // Array que guarda todos los cupones usados del usuario
+  id_cupones: string[]; // Array que guarda todos los cupones del usuario
+  id_cupones_usado: string[]; // Array que guarda todos los cupones usados del usuario
 }
 
 export interface Pedido {

@@ -15,31 +15,15 @@
           <ion-input id="cupon" [(ngModel)]="ngModel.nombre" class="input" style="height: 48px;" type="text"
                      name="cupon"></ion-input>
           <ion-icon style="z-index: 999; position: absolute;top: calc(50% - 8px);right: 0;" class="input-ico" slot="end" [name]="'checkmark-sharp'" (click)="enviar(actForm)" ></ion-icon>
-        </form> <!-- sa roto al mover el form-->
+        </form>
 
       </ion-item>
     </div>
-    <div style="margin-top: 30px; margin-bottom: 20px; padding-bottom: 5px; border-bottom: 1px solid grey;">Cupones
+    <div style="margin-top: 30px; margin-bottom: 20px; padding-bottom: 5px; border-bottom: 1px solid grey;">Cupones disponibles
     </div>
-    <div style="display: flex; margin-bottom: 15px;">
-      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
-      <div>25/02/2020</div>
-    </div>
-    <div style="display: flex; margin-bottom: 15px;">
-      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
-      <div>25/02/2020</div>
-    </div>
-    <div style="display: flex; margin-bottom: 15px;">
-      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
-      <div>25/02/2020</div>
-    </div>
-    <div style="display: flex; margin-bottom: 15px;">
-      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
-      <div>25/02/2020</div>
-    </div>
-    <div style="display: flex; margin-bottom: 15px;">
-      <div style="color: #00b939; margin-right: auto;">CODIGOCUPON23423</div>
-      <div>25/02/2020</div>
+    <div style="display: flex; margin-bottom: 15px;" *ngFor="let c of this.usuario_cupones">
+      <div style="color: #00b939; margin-right: auto;">{{c.nombre}}</div>
+      <div>{{c.caducidad}}</div>
     </div>
   </div>
 

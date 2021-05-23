@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
-import {Cupon, Pedido} from "../../interface/interface";
+import {Cupon, Pedido, Usuario} from "../../interface/interface";
 import {ActionSheetController} from "@ionic/angular";
 
 @Component({
@@ -21,6 +21,9 @@ export class CartPage implements OnInit {
   buttonCodigo: any;
   descuentoCupon: number;
   tiempoEstimado: number;
+  usuario: Usuario;
+  usuario_cupones: any [] = [];
+  desplegable: any [] = [];
 
   datos = [
     {
@@ -44,6 +47,7 @@ export class CartPage implements OnInit {
     this.precioTotal = 0;
     this.precioServicio = 2.5;
     this.precioEnvio = 3;
+    this.descuentoCupon = 0;
     this.tiempoEstimado = Math.floor(Math.random() * 45) + 15;
     this.dataService.getPedido().subscribe(res => {
       this.pedido = res as Pedido;
@@ -54,12 +58,39 @@ export class CartPage implements OnInit {
         this.precioPedido += this.pedido.precio_productos[i];
       }
       this.precioPedido = parseFloat(this.precioPedido.toFixed(2));
-      this.dataService.getCupon('6092ce6661acd045345ba236').subscribe(res => {
-        this.cupon = res as Cupon;
-        this.descuentoCupon = this.cupon.descuento;
-        this.dataService.deletePedido(this.pedido._id);
-        this.precioTotal = parseFloat(((this.precioEnvio + this.precioPedido + this.precioServicio) - this.descuentoCupon).toFixed(2));
+    });
+    this.precioTotal = this.precioEnvio + this.precioPedido + this.precioServicio;
+
+    this.desplegable.push({
+      text: 'Cancelar',
+      handler: () => {
+
+      }
+    });
+    this.dataService.getUsuario().subscribe(res => {
+      this.usuario = res as Usuario;
+      this.usuario.id_cupones.forEach(c => {
+        this.dataService.getCupon(c).subscribe(co => {
+          let newCupon = co as Cupon;
+          this.usuario_cupones.unshift(newCupon);
+          this.desplegable.unshift({
+            text: newCupon.nombre,
+            handler: () => {
+              this.seleccionarCupon(newCupon._id);
+              this.buttonCodigo = document.getElementById('button-codigo');
+              this.buttonCodigo.classList.add('button-codigo-usado');
+            }
+          });
+        });
       });
+    });
+  }
+
+  seleccionarCupon(id) {
+    this.dataService.getCupon(id).subscribe(res => {
+      this.cupon = res as Cupon;
+      this.descuentoCupon = this.cupon.descuento;
+      this.precioTotal = parseFloat(((this.precioEnvio + this.precioPedido + this.precioServicio) - this.descuentoCupon).toFixed(2));
     });
   }
 
@@ -112,7 +143,10 @@ export class CartPage implements OnInit {
   }
 
   pagar() {
-    let pago = this.datos.find(s => s.seleccionado);
+    this.usuario.id_cupones = this.usuario.id_cupones.filter(c => c.toUpperCase() != this.cupon._id.toUpperCase());
+    this.usuario.id_cupones_usado.push(this.cupon);
+
+    this.dataService.putUsuario(this.usuario._id, this.usuario).subscribe(res => {});
     this.dataService.putPedido(this.pedido._id,this.pedido).subscribe(res => {
       this.dataService.getPedido().subscribe(res => {
         this.pedido = res as Pedido;
@@ -122,35 +156,11 @@ export class CartPage implements OnInit {
 
 
   async presentActionSheet() {
+
     const actionSheet = await this.actionSheetController.create({
       header: 'Cupones',
       cssClass: 'my-custom-class',
-      buttons: [{
-        text: 'Delete',
-        handler: () => {
-          console.log('Delete clicked');
-        }
-      }, {
-        text: 'Share',
-        handler: () => {
-          console.log('Share clicked');
-        }
-      }, {
-        text: 'Play (open modal)',
-        handler: () => {
-          console.log('Play clicked');
-        }
-      }, {
-        text: 'Favorite',
-        handler: () => {
-          console.log('Favorite clicked');
-        }
-      }, {
-        text: 'Cerrar',
-        handler: () => {
-          console.log('Cancel clicked');
-        }
-      }]
+      buttons: this.desplegable
     });
     await actionSheet.present();
   }

@@ -3,6 +3,7 @@ const Cupon = require('../models/cupon');
 const Social = require('../models/redSocial');
 const Promocion = require('../models/promocion');
 const Pedido = require('../models/pedido');
+const Usuario = require('../models/usuario');
 
 const eventappCtrl = {};
 
@@ -53,11 +54,6 @@ eventappCtrl.getCuponByCode = async (req, res) => {
         const cupon = await Cupon.findOne({nombre: req.params.code});
         if (cupon == null) {
             res.status(404).json({message: 'Cupon not found'});
-        }
-
-        const date = new Date(parseInt(cupon.caducidad.split('-')[2]), parseInt(cupon.caducidad.split('-')[1]) - 1, parseInt(cupon.caducidad.split('-')[0])).getTime();
-        if (date < new Date().getTime()) {
-            res.status(404).json({message: 'Cupon invalid'});
         }
 
         res.status(201).json(cupon);
@@ -157,6 +153,49 @@ eventappCtrl.getOnePedido = async (req, res) => {
         res.status(201).json(pedido);
     }catch (e) {
         res.status(500).json({message: e.message});
+    }
+};
+
+eventappCtrl.editUsuarioCupon = async (req, res) => {
+    try{
+        const usuario = {
+            id_cupones: req.body.id_cupones,
+            id_cupones_usado: req.body.id_cupones_usado,
+        };
+        await Usuario.findByIdAndUpdate(req.params.id,{$set: usuario}, {new:true, useFindAndModify:false});
+        res.status(201).json({message: 'Usuario updated'});
+    }catch (e) {
+        res.status(400).json({message: e.message});
+    }
+};
+
+eventappCtrl.getUsuario = async (req, res) => {
+    try{
+        const usuario = await Usuario.findOne();
+        res.status(201).json(usuario);
+    }catch (e) {
+        res.status(500).json({message: e.message});
+    }
+};
+
+eventappCtrl.editUsuario = async (req, res) => {
+    try{
+        const usuario = {
+            nombre: req.body.nombre,
+            apellidos: req.body.apellidos,
+            num_telefono: req.body.num_telefono,
+            correo: req.body.correo,
+            pw: req.body.pw,
+            direcciones: req.body.direcciones,
+            datos_tarjeta: req.body.datos_tarjeta,
+            nivel: req.body.nivel,
+            id_cupones: req.body.id_cupones,
+            id_cupones_usado: req.body.id_cupones_usado,
+        };
+        await Usuario.findByIdAndUpdate(req.params.id,{$set: usuario}, {new:true, useFindAndModify:false});
+        res.status(201).json({message: 'Usuario updated'});
+    }catch (e) {
+        res.status(400).json({message: e.message});
     }
 };
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Producto} from "../../../../gestion-trabajofinal/src/app/models/Producto";
-import {Pedido} from "../interface/interface";
+import {Pedido, Usuario} from "../interface/interface";
 import {Cupon} from "../../../../gestion-trabajofinal/src/app/models/Cupon";
 
 @Injectable({
@@ -60,7 +60,14 @@ export class DataService {
   }
 
   deletePedido (_id: string){
-    console.log(this.URL_API + `/pedido/${_id}`);
     return this.http.delete( this.URL_API + `/pedido/${_id}` );
+  }
+
+  getUsuario (){
+    return this.http.get(this.URL_API + '/usuario');
+  }
+
+  putUsuario (_id: string, usuario: Usuario){
+    return this.http.put( this.URL_API + `/usuario/${_id}`, usuario);
   }
 }
