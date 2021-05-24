@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {AbstractControl, FormBuilder, FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
 import {ToastController} from '@ionic/angular';
+import {DataService} from "../../services/data.service";
+import {Usuario} from "../../interface/interface";
 
 @Component({
   selector: 'app-profile',
@@ -8,29 +10,25 @@ import {ToastController} from '@ionic/angular';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
-  usuario: {
-    nombre: string,
-    email: string,
-    password: string,
-    password2: string,
-    telefono: number,
-  };
+  usuario: Usuario = {_id: '', nombre: '', id_cupones_usado: [], id_cupones: [], apellidos: '', correo: '', datos_tarjeta: '', direcciones: [], nivel: '', pw: '', num_telefono: 0};
 
   showPassword = false;
   showPassword2 = false;
   passwordToggleIcon = 'eye';
   passwordToggleIcon2 = 'eye';
 
-  constructor(public toastController: ToastController, fb: FormBuilder) {
+  constructor(public toastController: ToastController, fb: FormBuilder, private dataService: DataService) {
 
   }
 
   // form: FormGroup;
 
   ngOnInit() {
-    this.usuario = {
-      nombre: null, email: null, password: null, password2: null, telefono: null
-    };
+    this.dataService.getUsuario().subscribe(res => {
+      this.usuario = res as Usuario;
+      console.log(this.usuario);
+    });
+
   }
 
   togglePassword(): void {
