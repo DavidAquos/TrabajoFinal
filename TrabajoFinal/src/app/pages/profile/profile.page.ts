@@ -28,6 +28,7 @@ export class ProfilePage implements OnInit {
 
   showPassword = false;
   showPassword2 = false;
+  isEdit = false;
   passwordToggleIcon = 'eye';
   passwordToggleIcon2 = 'eye';
 
@@ -53,6 +54,27 @@ export class ProfilePage implements OnInit {
       console.log(this.usuario);
     });
 
+    document.getElementsByClassName('edit-button')[0].addEventListener('click', function() {
+      this.isEdit = !this.isEdit;
+
+      document.getElementsByClassName('edit-button')[0].classList.add('opacity-0');
+      document.getElementsByClassName('save-user-button')[0].classList.remove('opacity-0');
+      Array.from(document.getElementsByTagName('input')).forEach(s => {
+        s.setAttribute('disabled', 'false');
+      });
+    }.bind(this));
+
+    document.getElementsByClassName('save-user-button')[0].addEventListener('click', function() {
+      this.isEdit = !this.isEdit;
+
+      document.getElementsByClassName('edit-button')[0].classList.remove('opacity-0');
+      document.getElementsByClassName('save-user-button')[0].classList.add('opacity-0');
+      Array.from(document.getElementsByTagName('input')).forEach(s => {
+        s.setAttribute('disabled', '');
+      });
+
+      this.actualizarDatos();
+    }.bind(this));
   }
 
   togglePassword(): void {
@@ -99,5 +121,11 @@ export class ProfilePage implements OnInit {
       duration: 2000
     });
     await toast.present();
+  }
+
+  enviar(actForm: NgForm){
+    this.dataService.putUsuario(this.usuario._id, this.usuario).subscribe(res => {
+
+    });
   }
 }
