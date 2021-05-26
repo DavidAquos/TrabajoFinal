@@ -10,10 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="cupones historial funcionando + cesta + pedido completado">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="cargado perfil">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App resstaurante.xd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentación proyecto final.odp" beforeDir="false" afterPath="$PROJECT_DIR$/Presentación proyecto final.odp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/cupones/cupones.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +57,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\TrabajoFinal\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\David\Desktop\TrabajoFinal\gestion-trabajofinal\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -138,7 +138,10 @@
       <workItem from="1621643147566" duration="645000" />
       <workItem from="1621796385919" duration="10607000" />
       <workItem from="1621841452372" duration="2775000" />
-      <workItem from="1621897469908" duration="1374000" />
+      <workItem from="1621897469908" duration="1577000" />
+      <workItem from="1621951090815" duration="330000" />
+      <workItem from="1621986214480" duration="664000" />
+      <workItem from="1622028854899" duration="3625000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -329,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621809139951</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="cargado perfil">
+      <created>1621900458536</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1621900458536</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +363,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/TrabajoFinal" />
     </ignored-roots>
-    <MESSAGE value="actu" />
     <MESSAGE value="carrito empezdo" />
     <MESSAGE value="Agregado cupones a las clases y subida de documento" />
     <MESSAGE value="Carrito avanzado y cambiado modelo user" />
@@ -378,6 +387,7 @@
     <MESSAGE value="cupones y carrito" />
     <MESSAGE value="cupon arreglado" />
     <MESSAGE value="cupones historial funcionando + cesta + pedido completado" />
-    <option name="LAST_COMMIT_MESSAGE" value="cupones historial funcionando + cesta + pedido completado" />
+    <MESSAGE value="cargado perfil" />
+    <option name="LAST_COMMIT_MESSAGE" value="cargado perfil" />
   </component>
 </project>

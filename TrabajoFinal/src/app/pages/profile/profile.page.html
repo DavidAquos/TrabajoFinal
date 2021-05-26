@@ -49,6 +49,17 @@
         <ion-input mode="md" type="number" [(ngModel)]="usuario.num_telefono" name="telefono"></ion-input>
       </ion-item>
       <br>
+      <ion-item mode="md" class="margen">
+        <ion-label position="floating">Tarjeta de crédito</ion-label>
+        <ion-input mode="md" type="number" [(ngModel)]="usuario.datos_tarjeta" name="datos_tarjeta"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item mode="md" class="margen">
+        <ion-label position="floating">Direcciones</ion-label>
+        <ion-input mode="md" type="number" [(ngModel)]="usuario.direcciones" name="direcciones"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button (click)="actualizarDatos()">Actualizar usuario</ion-button>
     </form>
 
 

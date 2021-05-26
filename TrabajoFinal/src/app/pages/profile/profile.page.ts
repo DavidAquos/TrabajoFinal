@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
 import {ToastController} from '@ionic/angular';
 import {DataService} from "../../services/data.service";
@@ -10,7 +10,21 @@ import {Usuario} from "../../interface/interface";
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
-  usuario: Usuario = {_id: '', nombre: '', id_cupones_usado: [], id_cupones: [], apellidos: '', correo: '', datos_tarjeta: '', direcciones: [], nivel: '', pw: '', num_telefono: 0};
+
+  usuario: Usuario = {
+    _id: '',
+    nombre: '',
+    pw: '',
+    correo: '',
+    num_telefono: 0,
+    nivel: '',
+    direcciones: [],
+    apellidos: '',
+    datos_tarjeta: '',
+    id_cupones_usado: [],
+    id_cupones: []
+  };
+  ngModel: Usuario;
 
   showPassword = false;
   showPassword2 = false;
@@ -18,10 +32,20 @@ export class ProfilePage implements OnInit {
   passwordToggleIcon2 = 'eye';
 
   constructor(public toastController: ToastController, fb: FormBuilder, private dataService: DataService) {
-
+    this.ngModel = {
+      _id: '',
+      nombre: '',
+      pw: '',
+      correo: '',
+      num_telefono: 0,
+      nivel: '',
+      direcciones: [],
+      apellidos: '',
+      datos_tarjeta: '',
+      id_cupones_usado: [],
+      id_cupones: []
+    }
   }
-
-  // form: FormGroup;
 
   ngOnInit() {
     this.dataService.getUsuario().subscribe(res => {
@@ -33,24 +57,24 @@ export class ProfilePage implements OnInit {
 
   togglePassword(): void {
     this.showPassword = !this.showPassword;
-    if (this.passwordToggleIcon === 'eye'){
+    if (this.passwordToggleIcon === 'eye') {
       this.passwordToggleIcon = 'eye-off';
-    }else {
+    } else {
       this.passwordToggleIcon = 'eye';
     }
   }
 
   togglePassword2(): void {
     this.showPassword2 = !this.showPassword2;
-    if (this.passwordToggleIcon2 === 'eye'){
+    if (this.passwordToggleIcon2 === 'eye') {
       this.passwordToggleIcon2 = 'eye-off';
-    }else {
+    } else {
       this.passwordToggleIcon2 = 'eye';
     }
   }
 
   matchingPasswords(passwordKey: string, confirmPasswordKey: string) {
-    return (group: FormGroup): {[key: string]: any} => {
+    return (group: FormGroup): { [key: string]: any } => {
       const password = group.controls[passwordKey];
       const confirmPassword = group.controls[confirmPasswordKey];
 
@@ -62,24 +86,18 @@ export class ProfilePage implements OnInit {
     };
   }
 
-  enviarFormularioRegistro(formulario: NgForm) {
-    console.log('Formulario: ', formulario, this.usuario);
+  actualizarDatos() {
+    this.dataService.putUsuario(this.usuario._id, this.usuario).subscribe(resUsuario => {
+      this.presentToast('Usuario actualizado correctamente!');
+      console.log('Usuario: ', this.usuario);
+    });
   }
 
-  registro() {
-    // this.comprobarPws();
-    this.presentToast();
-  }
-
-  async presentToast() {
+  async presentToast(mensaje: string) {
     const toast = await this.toastController.create({
-      message: 'Datos actualizados correctamente',
+      message: mensaje,
       duration: 2000
     });
     await toast.present();
-  }
-
-  onSelectFile($event: Event, number: number) {
-
   }
 }

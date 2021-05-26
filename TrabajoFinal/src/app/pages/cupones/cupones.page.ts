@@ -29,10 +29,6 @@ export class CuponesPage implements OnInit {
       });
     });
   }
-/*
-  onchange(actForm: NgForm) {
-    console.log(actForm.value.cupon);
-  }*/
 
   enviar(actForm: NgForm) {
       this.dataService.getCuponByCode(actForm.value.cupon.toUpperCase()).subscribe(res => {
@@ -63,7 +59,6 @@ export class CuponesPage implements OnInit {
 
             this.dataService.putUsuario(this.usuario._id, this.usuario).subscribe(resUsuario => {
               this.presentToast('Cupón agregado correctamente!');
-              console.log('Cupón recibido correctamente', this.cupon);
             });
           }
           else {
