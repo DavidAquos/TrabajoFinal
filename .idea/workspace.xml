@@ -10,11 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Perfil">
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Perfil medio acabado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +140,7 @@
       <workItem from="1621951090815" duration="330000" />
       <workItem from="1621986214480" duration="664000" />
       <workItem from="1622028854899" duration="3640000" />
-      <workItem from="1622063601187" duration="3418000" />
+      <workItem from="1622063601187" duration="5331000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -347,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622039240345</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Perfil medio acabado">
+      <created>1622067136873</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1622067136873</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +376,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/TrabajoFinal" />
     </ignored-roots>
-    <MESSAGE value="Agregado cupones a las clases y subida de documento" />
     <MESSAGE value="Carrito avanzado y cambiado modelo user" />
     <MESSAGE value="cambiado modelo user" />
     <MESSAGE value="Probando" />
@@ -396,6 +400,7 @@
     <MESSAGE value="cupones historial funcionando + cesta + pedido completado" />
     <MESSAGE value="cargado perfil" />
     <MESSAGE value="Perfil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Perfil" />
+    <MESSAGE value="Perfil medio acabado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perfil medio acabado" />
   </component>
 </project>
