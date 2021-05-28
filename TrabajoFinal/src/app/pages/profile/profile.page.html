@@ -47,17 +47,12 @@
       </ion-item>
       <br>
       <ion-item mode="md" class="margen">
-        <ion-label position="floating">Tarjeta de crédito</ion-label>
-        <ion-input disabled="{{!isEdit}}" mode="md" type="number" [(ngModel)]="usuario.datos_tarjeta" name="datos_tarjeta"></ion-input>
-        <ion-button>Editar tarjeta</ion-button>
-      </ion-item>
-      <br>
-      <ion-item mode="md" class="margen">
         <ion-label position="floating">Direcciones</ion-label>
         <ion-input disabled="{{!isEdit}}" mode="md" type="text" [(ngModel)]="usuario.direcciones" name="direcciones"></ion-input>
       </ion-item>
+        <ion-button disabled="{{!isEdit}}" routerLink="/tarjeta" style="margin-top: 20px; margin-bottom: 20px">Editar tarjeta</ion-button>
       <br>
-      <div (click)="enviar(formulario)" class="save-user-button opacity-0" style="text-align: center; padding: 15px;border: 1px solid white;border-radius: 10px;background: #3880ff;">Actualizar usuario</div>
+      <div (click)="enviar(formulario)" class="save-user-button opacity-0" style="text-align: center; padding: 15px;border: 1px solid green;border-radius: 10px;background: #0e2d0e; ">Actualizar usuario</div>
     </form>
 
   </div>

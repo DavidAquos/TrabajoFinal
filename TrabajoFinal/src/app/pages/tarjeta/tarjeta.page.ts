@@ -50,15 +50,9 @@ export class TarjetaPage implements OnInit {
   ngOnInit() {
     this.dataService.getUsuario().subscribe(res => {
       this.usuario = res as Usuario;
-      console.log(this.usuario);
-      console.log('Datos tarjeta: ',this.usuario.datos_tarjeta);
       this.bin = this.usuario.datos_tarjeta.split('|')[0];
       this.caducidad = this.usuario.datos_tarjeta.split('|')[1];
       this.cvv = this.usuario.datos_tarjeta.split('|')[2];
-
-      console.log('Bin: ', this.bin);
-      console.log('Caducidad: ', this.caducidad);
-      console.log('CVV', this.cvv);
     });
   }
 

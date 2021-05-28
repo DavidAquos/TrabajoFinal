@@ -10,18 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="123123">
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrabajoFinal/src/assets/images/visa.png" afterDir="false" />
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Datos tarjeta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentación proyecto final.odp" beforeDir="false" afterPath="$PROJECT_DIR$/Presentación proyecto final.odp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +147,7 @@
       <workItem from="1622063601187" duration="5378000" />
       <workItem from="1622107020425" duration="642000" />
       <workItem from="1622123024952" duration="14000" />
-      <workItem from="1622230779914" duration="6727000" />
+      <workItem from="1622230779914" duration="9013000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -371,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622074048262</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Datos tarjeta">
+      <created>1622244223985</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1622244223985</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +397,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/TrabajoFinal" />
     </ignored-roots>
-    <MESSAGE value="cambiado modelo user" />
     <MESSAGE value="Probando" />
     <MESSAGE value="Home con carrousel" />
     <MESSAGE value="redSocial agregada a medias" />
@@ -420,6 +421,7 @@
     <MESSAGE value="Perfil" />
     <MESSAGE value="Perfil medio acabado" />
     <MESSAGE value="123123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123123" />
+    <MESSAGE value="Datos tarjeta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Datos tarjeta" />
   </component>
 </project>

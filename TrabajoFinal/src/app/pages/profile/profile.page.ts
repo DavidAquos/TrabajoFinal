@@ -51,7 +51,6 @@ export class ProfilePage implements OnInit {
   ngOnInit() {
     this.dataService.getUsuario().subscribe(res => {
       this.usuario = res as Usuario;
-      console.log(this.usuario);
     });
 
     document.getElementsByClassName('edit-button')[0].addEventListener('click', function() {
@@ -111,7 +110,6 @@ export class ProfilePage implements OnInit {
   actualizarDatos() {
     this.dataService.putUsuario(this.usuario._id, this.usuario).subscribe(resUsuario => {
       this.presentToast('Usuario actualizado correctamente!');
-      console.log('Usuario: ', this.usuario);
     });
   }
 
