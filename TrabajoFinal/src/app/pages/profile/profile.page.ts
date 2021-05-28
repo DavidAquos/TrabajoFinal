@@ -124,8 +124,6 @@ export class ProfilePage implements OnInit {
   }
 
   enviar(actForm: NgForm){
-    this.dataService.putUsuario(this.usuario._id, this.usuario).subscribe(res => {
-
-    });
+    this.dataService.putUsuario(this.usuario._id, this.usuario).subscribe();
   }
 }

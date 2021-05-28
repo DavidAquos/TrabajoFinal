@@ -58,6 +58,10 @@ const routes: Routes = [
     path: 'completado',
     loadChildren: () => import('./pages/completado/completado.module').then( m => m.CompletadoPageModule)
   },
+  {
+    path: 'tarjeta',
+    loadChildren: () => import('./pages/tarjeta/tarjeta.module').then( m => m.TarjetaPageModule)
+  },
 
 
 

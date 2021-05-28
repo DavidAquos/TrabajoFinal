@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" default-href="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #formulario="ngForm">
+    <div style="padding: 30px;">
+      <div class="card-wrapper">
+        <div class="card-number">
+          <ion-label style="color: #484848; font-size: 12px" position="floating">Número de la tarjeta</ion-label>
+          <ion-input class="input-card" mode="md" type="text" required style="" name="bin" [maxlength]="16" [(ngModel)]="bin"
+                     placeholder="Ej: 2342 2343 4234 3342"></ion-input>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <div class="card-date" style="margin-right: 45px;">
+            <ion-label style="color: #484848; font-size: 12px" position="floating">Fecha de validez</ion-label>
+            <ion-input (ionChange)="formatFecha()" class="input-card" mode="md" type="text" [maxlength]="5" required [(ngModel)]="caducidad" style="" name="caducidad"
+                       placeholder="MM/YY"></ion-input>
+          </div>
+          <div class="card-code">
+            <ion-label style="color: #484848; font-size: 12px" position="floating">CVV</ion-label>
+            <ion-input class="input-card" mode="md" type="text" required style="" name="cvv" [maxlength]="3" [(ngModel)]="cvv"
+                       placeholder="CVV"></ion-input>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-enviar" (click)="mandarTarjeta(formulario)">Guardar tarjeta</div>
+    </div>
+  </form>
+
+
+</ion-content>

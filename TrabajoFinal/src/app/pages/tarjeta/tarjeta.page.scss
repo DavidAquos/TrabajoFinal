@@ -1,0 +1,27 @@
+.card-wrapper {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 14px;
+  background: url('/assets/images/visa.png') white;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  padding: 17% 20px 10px 20px;
+  box-shadow: 2px 2px 13px 4px #ef000042;
+}
+.input-card {
+  border: 1px solid #afa7a7;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: black;
+  box-shadow: 2px 2px 3px -1px #00000061;
+}
+
+.button-enviar {
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  border: 3px solid green;
+  background: #0e2d0e;
+  border-radius: 10px;
+}
