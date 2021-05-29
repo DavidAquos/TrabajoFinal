@@ -10,14 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Datos tarjeta">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/profile/profile.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoFinal/src/app/pages/tarjeta/tarjeta.page.ts" afterDir="false" />
-    </list>
+    <list default="true" id="25de8f9c-588a-42d3-a77a-6600a752ca6a" name="Default Changelist" comment="Acabado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +140,7 @@
       <workItem from="1622063601187" duration="5378000" />
       <workItem from="1622107020425" duration="642000" />
       <workItem from="1622123024952" duration="14000" />
-      <workItem from="1622230779914" duration="9013000" />
+      <workItem from="1622230779914" duration="9638000" />
     </task>
     <task id="LOCAL-00001" summary="Tab hecho pero no va">
       <created>1617702463845</created>
@@ -373,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622244223985</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Acabado">
+      <created>1622246089846</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1622246089846</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +397,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/TrabajoFinal" />
     </ignored-roots>
-    <MESSAGE value="Probando" />
     <MESSAGE value="Home con carrousel" />
     <MESSAGE value="redSocial agregada a medias" />
     <MESSAGE value="redSocial tirando" />
@@ -422,6 +421,7 @@
     <MESSAGE value="Perfil medio acabado" />
     <MESSAGE value="123123" />
     <MESSAGE value="Datos tarjeta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Datos tarjeta" />
+    <MESSAGE value="Acabado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Acabado" />
   </component>
 </project>
